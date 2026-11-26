@@ -1,0 +1,3064 @@
+﻿<!DOCTYPE html>
+<html lang="vi" class="dark"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxMTE0NjI2MTc4ODA0OTA1NDQ3NyIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjX2IxYjFmN2U2MTdkODI2YWZfYXRvcmNoLXQzLWRhc2hib2FyZC5odG1sLTg2OCJ9LCJleHAiOjE3OTU2Nzg2ODEsImlhdCI6MTc5NTY3NTA4MSwiYWxnIjoiUlMyNTYifQ.jYiJ1U9ekCWopUxbyQbhOToPwtkIznvR9gU4ddxdCeV-PMEMfHbQC4lmiFL23Qbmhk83rDvNDHH0dy6MGtqMoJWMDjJc5z6o5oHvMEgEmQiihmnPACuolegXZyDjie_PWt1zYXjO6UBnILjPFyvsW0Zmj2fhJ-nvtEq01NG7sIIUICcUjMFahGPNwLxjeu1yWGwVANAGkHw6TpW6gi2I9ulAtGVvARed1K2h1BIQRFyQn1CfrCJy_CEg5D_CMc0tPLbl7djsKFkcG8nFD2nWbKimrKZVE3Nie8RVxONGuQ3frOjrH94QEOYlmgQG3homix67BAP-KkmNmqW3GoFNxg","c_b1b1f7e617d826af_atorch-t3-dashboard.html-868")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var k=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function m(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var q=m(this);
+function r(a,b){if(b)a:{var d=q;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&k(d,a,{configurable:!0,writable:!0,value:b})}}function t(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function u(a){return t(a())}
+r("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});r("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function v(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var aa=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let y=null;function z(a={}){return y?y:a.u?y=a.u:y=w(window.getComputedStyle(document.documentElement))}function A(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function B(a,b={}){var d;if(!(d=b.width)){d=A(a,"border-left-width");var c=A(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=A(a,"border-top-width"),c=A(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function C(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function ba(a){return u(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function ca(a,b,d){return u(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return ba(c)})}
+var D=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||D(a,b)};function da(a,b){return z(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function E(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=aa();try{b.className=`${b.className} ${f}`}catch(h){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=da(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function F(a){return a.search(/^(data:)/)!==-1}function G(a,b,d){return u(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var h=new FileReader;h.onerror=g;h.onloadend=()=>{try{f(d({v:c,result:h.result}))}catch(l){g(l)}};h.readAsDataURL(e)})})}const H={};function ea(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function I(a,b,d){return u(function*(){var c=ea(a,b,d.F);if(H[c]!=null)return H[c];d.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield G(a,d.l,({v:g,result:h})=>{b||(b=g.headers.get("Content-Type")||"");return h.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.o||""}return H[c]=e})};const J={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function K(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function fa(a){return u(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):C(b)})}function ha(a,b){return u(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return C(d)}d=a.poster;d=yield I(d,J[K(d).toLowerCase()]||"",b);return C(d)})}
+function ia(a,b){return u(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield L(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ja(a,b){return u(function*(){return D(a,HTMLCanvasElement)?fa(a):D(a,HTMLVideoElement)?ha(a,b):D(a,HTMLIFrameElement)?ia(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function ka(a,b,d){return u(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(D(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||D(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>L(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function la(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):z(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);D(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ma(a,b){D(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function na(a,b){return u(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield L(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function L(a,b,d){return u(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ja(c,b)).then(c=>ka(a,c,b)).then(c=>{D(c,Element)&&(la(a,c,b),E(a,c,":before",b),E(a,c,":after",b),D(a,HTMLTextAreaElement)&&(c.textContent=a.value),D(a,HTMLInputElement)&&c.setAttribute("value",a.value),ma(a,c));return c}).then(c=>na(c,b)):null})};const M=/url\((['"]?)([^'"]+?)\1\)/g,oa=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,pa=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function qa(a){var b=[];a.replace(M,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!F(d))}
+function ra(a,b,d,c){return u(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield I(e,J[K(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function sa(a,{K:b}){return b?a.replace(pa,d=>{for(;;){let [c,,e]=oa.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function N(a,b,d){return u(function*(){if(a.search(M)===-1)return a;var c=sa(a,d);return qa(c).reduce((e,f)=>e.then(g=>ra(g,f,b,d)),Promise.resolve(c))})};function O(a,b,d){return u(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield N(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function ta(a,b){return u(function*(){(yield O("background",a,b))||(yield O("background-image",a,b));(yield O("mask",a,b))||(yield O("-webkit-mask",a,b))||(yield O("mask-image",a,b))||(yield O("-webkit-mask-image",a,b))})}
+function ua(a,b){return u(function*(){var d=D(a,HTMLImageElement);if(d&&!F(a.src)||D(a,SVGImageElement)&&!F(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield I(c,J[K(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...h)=>{try{f(b.h(...h))}catch(l){g(l)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function va(a,b){return u(function*(){var d=w(a.childNodes).map(c=>P(c,b));yield Promise.all(d).then(()=>a)})}function P(a,b){return u(function*(){D(a,Element)&&(yield ta(a,b),yield ua(a,b),yield va(a,b))})};const Q={};function R(a){return u(function*(){var b=Q[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return Q[a]=b})}function S(a,b){return u(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>u(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return G(g,b.l,({result:h})=>{d=d.replace(f,`url(${h})`);return[f,h]})}));return Promise.all(e).then(()=>d)})}
+function T(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function wa(a,b){return u(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let h=g+1;f=R(f.href).then(l=>S(l,b)).then(l=>T(l).forEach(p=>{try{e.insertRule(p,p.startsWith("@import")?h+=1:e.cssRules.length)}catch(x){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(h=>h.href==null)||document.styleSheets[0];e.href!=null&&c.push(R(e.href).then(h=>S(h,b)).then(h=>T(h).forEach(l=>{g.insertRule(l,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function xa(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(M)!==-1)}function ya(a,b){return u(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=yield wa(w(a.ownerDocument.styleSheets),b);return xa(d)})}
+function za(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function Aa(a,b){return u(function*(){var d=yield ya(a,b),c=za(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>N(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function Ba(a,b){return u(function*(){var d=b.m!=null?b.m:b.A?null:yield Aa(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function Ca(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield L(a,b,!0);yield Ba(e,b);yield P(e,b);v(e,b);return yield ca(e,d,c)})}
+function Da(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield Ca(a,b);e=yield C(e);var f=document.createElement("canvas"),g=f.getContext("2d"),h=b.I||window.devicePixelRatio||1,l=b.j||d,p=b.i||c;f.width=l*h;f.height=p*h;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${l}`;f.style.height=`${p}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Ea(a,b={}){return u(function*(){return(yield Da(a,b)).toDataURL()})};const Fa=["gemini.google.com","corp.google.com","proxy.googlers.com"];function V(a){a=Number(a.replace(/px$/,""));return Number.isFinite(a)?a:0}function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var d=document.createElement("canvas");d.width=a;d.height=b;return d.toDataURL("image/png")}const Y=X(1,1);
+function Z(a,b){return u(function*(){var d=Math.max(b?b.width:a.offsetWidth,1),c=Math.max(b?b.height:a.offsetHeight,1),e=HTMLCanvasElement.prototype.toDataURL;b&&(HTMLCanvasElement.prototype.toDataURL=function(f,g){var h;if(h=this.isConnected&&a.contains(this)){{let n=this.getBoundingClientRect();if(n.width===0||n.height===0)h=!1;else if(window.getComputedStyle(this).position==="fixed")h=n.bottom>0&&n.top<b.height&&n.right>0&&n.left<b.width;else{h=a.getBoundingClientRect();var l=n.top-h.top,p=n.left-
+h.left,x=n.right-h.left;h=n.bottom-h.top>b.scrollTop&&l<b.scrollTop+b.height&&x>b.scrollLeft&&p<b.scrollLeft+b.width}}h=!h}return h?"data:,":e.call(this,f,g)});try{let f=window.getComputedStyle(a),g=b?`${V(f.marginTop)-b.scrollTop}px`:void 0,h=b?`${V(f.marginLeft)-b.scrollLeft}px`:void 0,l=`${Math.max(a.offsetWidth,d)}px`,p,x=`${Math.max(a.offsetHeight,c+((p=b==null?void 0:b.scrollTop)!=null?p:0))}px`;return yield Ea(a,Object.assign({},{width:d,height:c,j:d,i:c},b?{style:{width:l,height:x,marginTop:g,
+marginLeft:h,marginBlockStart:g,marginInlineStart:h}}:{},{A:!0,filter:n=>{if(n.tagName==="IMG"){let U=n.getAttribute("src");if(!U||U.trim()===""||n.style.display==="none")return!1}return!0},o:Y,h:()=>Y}))}catch(f){return X(d,c)}finally{HTMLCanvasElement.prototype.toDataURL=e}})}
+function Ga(){return u(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ha(a){return u(function*(){var b={width:window.innerWidth||document.documentElement.clientWidth||document.body.offsetWidth,height:window.innerHeight||document.documentElement.clientHeight||document.body.offsetHeight,scrollTop:window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0,scrollLeft:window.scrollX||document.documentElement.scrollLeft||document.body.scrollLeft||0},d=document.body;if(W()){let c=yield Ga();d=c;document.body.appendChild(c)}b=yield Z(d,b);W()&&
+document.body.removeChild(d);window.parent.postMessage({type:"SEND_SCREENSHOT",image:b,topOffset:0},a.origin)})}function Ia(a){return u(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}window.addEventListener("message",a=>u(function*(){if(Fa.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ha(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ia(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.i=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.extensions="";var l=0,t=null,r=null,q=[],F=new TextEncoder,
+G=new TextDecoder;c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*
+16|0;return(f==="x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;
+(g=t)==null||g.postMessage(a)}};Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function() {
+  const OVERLAY_SELECTOR =
+    'dialog[open], [role="dialog"], [role="alertdialog"], [role="menu"], [role="listbox"], [role="combobox"]';
+
+  function isVisibleOverlay(element) {
+    if (element.closest('[hidden], [aria-hidden="true"], [inert]')) {
+      return false;
+    }
+    if (window.getComputedStyle(element).visibility === 'hidden') {
+      return false;
+    }
+    for (let cur = element; cur; cur = cur.parentElement) {
+      if (window.getComputedStyle(cur).display === 'none') {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function hasOpenOverlay() {
+    const candidates = document.querySelectorAll(OVERLAY_SELECTOR);
+    for (let i = 0; i < candidates.length; i++) {
+      if (isVisibleOverlay(candidates[i])) {
+        return true;
+      }
+    }
+    try {
+      if (document.querySelector('[popover]:popover-open')) {
+        return true;
+      }
+    } catch (e) {
+      // Ignore engines that do not support :popover-open.
+    }
+    return false;
+  }
+
+  function isNonEmptySearchInput(target) {
+    return (
+      Boolean(target) &&
+      target.tagName === 'INPUT' &&
+      typeof target.type === 'string' &&
+      target.type.toLowerCase() === 'search' &&
+      typeof target.value === 'string' &&
+      target.value.length > 0
+    );
+  }
+
+  function shouldIgnoreEscape(event) {
+    return (
+      event.key !== 'Escape' ||
+      event.altKey ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey ||
+      event.isComposing ||
+      event.repeat ||
+      event.keyCode === 229 ||
+      isNonEmptySearchInput(event.target)
+    );
+  }
+
+  let shouldIgnoreCaptureState = false;
+
+  window.addEventListener(
+    'keydown',
+    function(event) {
+      if (event.key === 'Escape') {
+        shouldIgnoreCaptureState =
+          hasOpenOverlay() || isNonEmptySearchInput(event.target);
+      }
+    },
+    {capture: true},
+  );
+
+  window.addEventListener('keydown', function(event) {
+    if (
+      shouldIgnoreEscape(event) ||
+      event.defaultPrevented ||
+      shouldIgnoreCaptureState
+    ) {
+      return;
+    }
+    const wasBlockedOnCapture = shouldIgnoreCaptureState;
+    queueMicrotask(function() {
+      if (event.defaultPrevented || wasBlockedOnCapture) {
+        return;
+      }
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({'type': 'escapeKey'}, '*');
+      }
+    });
+  });
+})();</script><script data-bard-client-injected="true">(function() {
+  function normalizeSlug(str) {
+    try {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^p{L}p{N}s_-]/gu, '')
+        .replace(/s+/g, '-');
+    } catch (e) {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9s_-]/g, '')
+        .replace(/s+/g, '-');
+    }
+  }
+
+  function findTargetElement(hash) {
+    if (!hash || hash === '#') {
+      return null;
+    }
+    const rawId = hash.startsWith('#') ? hash.slice(1) : hash;
+    let decodedId = rawId;
+    try {
+      decodedId = decodeURIComponent(rawId);
+    } catch (e) {
+      // Ignore URI malformed errors.
+    }
+
+    // 1. Direct ID match (raw and decoded).
+    let target = document.getElementById(rawId) || document.getElementById(decodedId);
+    if (target) {
+      return target;
+    }
+
+    // 2. Name attribute match (<a name="...">).
+    try {
+      if (typeof CSS !== 'undefined' && CSS.escape) {
+        target =
+          document.querySelector('[name="' + CSS.escape(rawId) + '"]') ||
+          document.querySelector('[name="' + CSS.escape(decodedId) + '"]');
+      } else {
+        const namedElements = document.getElementsByName(rawId);
+        if (namedElements && namedElements.length > 0) {
+          return namedElements[0];
+        }
+      }
+    } catch (e) {
+      // Ignore querySelector syntax errors.
+    }
+    if (target) {
+      return target;
+    }
+
+    // 3. Match heading text by slug (for Markdown TOCs where headings lack explicit IDs).
+    const targetSlug = normalizeSlug(decodedId);
+    if (targetSlug) {
+      for (const heading of document.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
+        if (normalizeSlug(heading.textContent || '') === targetSlug) {
+          return heading;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  document.addEventListener('click', function(event) {
+    const target = event.target;
+    const anchor = target && typeof target.closest === 'function' ? target.closest('a') : null;
+    if (!anchor) {
+      return;
+    }
+
+    const href = anchor.getAttribute('href');
+    if (
+      !href ||
+      href.trim().toLowerCase().startsWith('javascript:') ||
+      anchor.hasAttribute('download')
+    ) {
+      return;
+    }
+
+    // Check if the link is an in-page hash / anchor link.
+    if (href.startsWith('#')) {
+      event.preventDefault();
+      const targetElement = findTargetElement(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
+      return;
+    }
+
+    // Check if the URL has the same origin/pathname but with a hash.
+    try {
+      const url = new URL(anchor.href, window.location.href);
+      if (
+        url.hash &&
+        url.origin === window.location.origin &&
+        url.pathname === window.location.pathname
+      ) {
+        event.preventDefault();
+        const targetElement = findTargetElement(url.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+        return;
+      }
+    } catch (e) {
+      // Fall through if URL parsing fails.
+    }
+
+    // For all external or full navigation links, prevent iframe-level navigation
+    // (which breaks in AGSA WebView or sandboxed iframes) and ensure they open
+    // safely in a new tab/window.
+    if (anchor.target !== '_blank') {
+      event.preventDefault();
+      window.open(anchor.href, '_blank', 'noopener,noreferrer');
+    }
+  }, {capture: true});
+})();</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atorch T3 Pro Studio — WebBluetooth Telemetry &amp; Báo Cáo QC</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js for Real-time Telemetry Graphing -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" crossorigin="anonymous"></script>
+  <!-- Hammer.js & Chart.js Zoom Plugin for Interactive Zoom/Pan -->
+  <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1/dist/chartjs-plugin-zoom.min.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            slate: {
+              850: '#151e2e',
+              925: '#0c121e',
+              950: '#070b14',
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      background-color: #070b14;
+      color: #e2e8f0;
+      font-family: 'Inter', sans-serif;
+    }
+    .mono-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-variant-numeric: tabular-nums;
+    }
+    /* Custom subtle scrollbars */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0c121e;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #334155;
+    }
+    /* Glowing status dot animation */
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.45; transform: scale(0.92); }
+    }
+    .animate-pulse-glow {
+      animation: pulse-glow 1.8s infinite ease-in-out;
+    }
+    /* Print styling for QC Certificate Modal */
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #print-report-area, #print-report-area * {
+        visibility: visible;
+      }
+      #print-report-area {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: #ffffff !important;
+        color: #0f172a !important;
+        padding: 24px !important;
+        box-shadow: none !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:JetBrains Mono, monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.bottom-4{bottom:1rem}.right-4{right:1rem}.top-0{top:0px}.z-30{z-index:30}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.my-1{margin-top:0.25rem;margin-bottom:0.25rem}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.ml-1{margin-left:0.25rem}.mr-1{margin-right:0.25rem}.mt-1{margin-top:0.25rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-0\.5{height:0.125rem}.h-10{height:2.5rem}.h-2{height:0.5rem}.h-2\.5{height:0.625rem}.h-3\.5{height:0.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-9{height:2.25rem}.h-\[330px\]{height:330px}.min-h-\[48px\]{min-height:48px}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-2{width:0.5rem}.w-2\.5{width:0.625rem}.w-3\.5{width:0.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-9{width:2.25rem}.w-full{width:100%}.w-px{width:1px}.max-w-2xl{max-width:42rem}.max-w-\[1600px\]{max-width:1600px}.max-w-sm{max-width:24rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;user-select:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.items-baseline{align-items:baseline}.items-stretch{align-items:stretch}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-0\.5{gap:0.125rem}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-slate-800\/80 > :not([hidden]) ~ :not([hidden]){border-color:rgb(30 41 59 / 0.8)}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-t{border-top-width:1px}.border-amber-500\/20{border-color:rgb(245 158 11 / 0.2)}.border-cyan-500\/20{border-color:rgb(6 182 212 / 0.2)}.border-cyan-500\/30{border-color:rgb(6 182 212 / 0.3)}.border-cyan-500\/40{border-color:rgb(6 182 212 / 0.4)}.border-emerald-500\/20{border-color:rgb(16 185 129 / 0.2)}.border-indigo-500\/30{border-color:rgb(99 102 241 / 0.3)}.border-purple-500\/20{border-color:rgb(168 85 247 / 0.2)}.border-rose-500\/30{border-color:rgb(244 63 94 / 0.3)}.border-rose-500\/40{border-color:rgb(244 63 94 / 0.4)}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-600{--tw-border-opacity:1;border-color:rgb(71 85 105 / var(--tw-border-opacity, 1))}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-700\/80{border-color:rgb(51 65 85 / 0.8)}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.border-slate-800\/60{border-color:rgb(30 41 59 / 0.6)}.border-slate-800\/80{border-color:rgb(30 41 59 / 0.8)}.border-slate-800\/90{border-color:rgb(30 41 59 / 0.9)}.border-slate-900{--tw-border-opacity:1;border-color:rgb(15 23 42 / var(--tw-border-opacity, 1))}.bg-\[\#04070d\]{--tw-bg-opacity:1;background-color:rgb(4 7 13 / var(--tw-bg-opacity, 1))}.bg-\[\#060911\]{--tw-bg-opacity:1;background-color:rgb(6 9 17 / var(--tw-bg-opacity, 1))}.bg-\[\#0a0f1c\]{--tw-bg-opacity:1;background-color:rgb(10 15 28 / var(--tw-bg-opacity, 1))}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.bg-amber-500\/10{background-color:rgb(245 158 11 / 0.1)}.bg-cyan-400{--tw-bg-opacity:1;background-color:rgb(34 211 238 / var(--tw-bg-opacity, 1))}.bg-cyan-500{--tw-bg-opacity:1;background-color:rgb(6 182 212 / var(--tw-bg-opacity, 1))}.bg-cyan-500\/10{background-color:rgb(6 182 212 / 0.1)}.bg-cyan-950\/60{background-color:rgb(8 51 68 / 0.6)}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/10{background-color:rgb(16 185 129 / 0.1)}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-indigo-500\/15{background-color:rgb(99 102 241 / 0.15)}.bg-purple-400{--tw-bg-opacity:1;background-color:rgb(192 132 252 / var(--tw-bg-opacity, 1))}.bg-purple-500\/10{background-color:rgb(168 85 247 / 0.1)}.bg-rose-500{--tw-bg-opacity:1;background-color:rgb(244 63 94 / var(--tw-bg-opacity, 1))}.bg-rose-500\/15{background-color:rgb(244 63 94 / 0.15)}.bg-rose-600{--tw-bg-opacity:1;background-color:rgb(225 29 72 / var(--tw-bg-opacity, 1))}.bg-sky-400{--tw-bg-opacity:1;background-color:rgb(56 189 248 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-500{--tw-bg-opacity:1;background-color:rgb(100 116 139 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-900\/80{background-color:rgb(15 23 42 / 0.8)}.bg-slate-900\/90{background-color:rgb(15 23 42 / 0.9)}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(7 11 20 / var(--tw-bg-opacity, 1))}.bg-slate-950\/80{background-color:rgb(7 11 20 / 0.8)}.bg-slate-950\/90{background-color:rgb(7 11 20 / 0.9)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-cyan-500\/20{--tw-gradient-from:rgb(6 182 212 / 0.2) var(--tw-gradient-from-position);--tw-gradient-to:rgb(6 182 212 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-blue-600\/20{--tw-gradient-to:rgb(37 99 235 / 0.2) var(--tw-gradient-to-position)}.p-0\.5{padding:0.125rem}.p-1{padding:0.25rem}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.pb-3{padding-bottom:0.75rem}.pb-4{padding-bottom:1rem}.pt-2{padding-top:0.5rem}.pt-2\.5{padding-top:0.625rem}.pt-3{padding-top:0.75rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:JetBrains Mono, monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-amber-500\/80{color:rgb(245 158 11 / 0.8)}.text-cyan-300{--tw-text-opacity:1;color:rgb(103 232 249 / var(--tw-text-opacity, 1))}.text-cyan-400{--tw-text-opacity:1;color:rgb(34 211 238 / var(--tw-text-opacity, 1))}.text-cyan-500{--tw-text-opacity:1;color:rgb(6 182 212 / var(--tw-text-opacity, 1))}.text-cyan-500\/80{color:rgb(6 182 212 / 0.8)}.text-cyan-700{--tw-text-opacity:1;color:rgb(14 116 144 / var(--tw-text-opacity, 1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-emerald-500\/80{color:rgb(16 185 129 / 0.8)}.text-indigo-300{--tw-text-opacity:1;color:rgb(165 180 252 / var(--tw-text-opacity, 1))}.text-indigo-400\/80{color:rgb(129 140 248 / 0.8)}.text-purple-300{--tw-text-opacity:1;color:rgb(216 180 254 / var(--tw-text-opacity, 1))}.text-purple-400{--tw-text-opacity:1;color:rgb(192 132 252 / var(--tw-text-opacity, 1))}.text-purple-400\/80{color:rgb(192 132 252 / 0.8)}.text-rose-300{--tw-text-opacity:1;color:rgb(253 164 175 / var(--tw-text-opacity, 1))}.text-rose-400{--tw-text-opacity:1;color:rgb(251 113 133 / var(--tw-text-opacity, 1))}.text-rose-500{--tw-text-opacity:1;color:rgb(244 63 94 / var(--tw-text-opacity, 1))}.text-sky-300{--tw-text-opacity:1;color:rgb(125 211 252 / var(--tw-text-opacity, 1))}.text-sky-400{--tw-text-opacity:1;color:rgb(56 189 248 / var(--tw-text-opacity, 1))}.text-slate-100{--tw-text-opacity:1;color:rgb(241 245 249 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-slate-950{--tw-text-opacity:1;color:rgb(7 11 20 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.placeholder-slate-500::placeholder{--tw-placeholder-opacity:1;color:rgb(100 116 139 / var(--tw-placeholder-opacity, 1))}.opacity-80{opacity:0.8}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-cyan-500\/20{--tw-shadow-color:rgb(6 182 212 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-cyan-950\/40{--tw-shadow-color:rgb(8 51 68 / 0.4);--tw-shadow:var(--tw-shadow-colored)}.shadow-emerald-950\/40{--tw-shadow-color:rgb(2 44 34 / 0.4);--tw-shadow:var(--tw-shadow-colored)}.shadow-rose-950\/40{--tw-shadow-color:rgb(76 5 25 / 0.4);--tw-shadow:var(--tw-shadow-colored)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.selection\:bg-cyan-500\/30 *::selection{background-color:rgb(6 182 212 / 0.3)}.selection\:text-cyan-200 *::selection{--tw-text-opacity:1;color:rgb(165 243 252 / var(--tw-text-opacity, 1))}.selection\:bg-cyan-500\/30::selection{background-color:rgb(6 182 212 / 0.3)}.selection\:text-cyan-200::selection{--tw-text-opacity:1;color:rgb(165 243 252 / var(--tw-text-opacity, 1))}.hover\:border-amber-500\/40:hover{border-color:rgb(245 158 11 / 0.4)}.hover\:border-cyan-500\/40:hover{border-color:rgb(6 182 212 / 0.4)}.hover\:border-emerald-500\/40:hover{border-color:rgb(16 185 129 / 0.4)}.hover\:border-purple-500\/40:hover{border-color:rgb(168 85 247 / 0.4)}.hover\:bg-amber-500\/15:hover{background-color:rgb(245 158 11 / 0.15)}.hover\:bg-cyan-400:hover{--tw-bg-opacity:1;background-color:rgb(34 211 238 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-400:hover{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-500:hover{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-500\/25:hover{background-color:rgb(99 102 241 / 0.25)}.hover\:bg-rose-500:hover{--tw-bg-opacity:1;background-color:rgb(244 63 94 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-950\/70:hover{background-color:rgb(76 5 25 / 0.7)}.hover\:bg-slate-300:hover{--tw-bg-opacity:1;background-color:rgb(203 213 225 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-800:hover{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.hover\:text-cyan-400:hover{--tw-text-opacity:1;color:rgb(34 211 238 / var(--tw-text-opacity, 1))}.hover\:text-rose-300:hover{--tw-text-opacity:1;color:rgb(253 164 175 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.focus\:border-cyan-500:focus{--tw-border-opacity:1;border-color:rgb(6 182 212 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-0:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-cyan-500\/40:focus{--tw-ring-color:rgb(6 182 212 / 0.4)}.active\:scale-\[0\.98\]:active{--tw-scale-x:0.98;--tw-scale-y:0.98;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:inline-block{display:inline-block}.sm\:inline{display:inline}.sm\:h-\[380px\]{height:380px}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.sm\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:gap-2{gap:0.5rem}.sm\:gap-4{gap:1rem}.sm\:p-5{padding:1.25rem}.sm\:p-8{padding:2rem}.sm\:px-0{padding-left:0px;padding-right:0px}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 768px){.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}.md\:justify-between{justify-content:space-between}}@media (min-width: 1280px){.xl\:col-span-4{grid-column:span 4 / span 4}.xl\:col-span-8{grid-column:span 8 / span 8}.xl\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.xl\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}</style></head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
+
+  <!-- Toast Notification Banner -->
+  <div id="toast-container" class="fixed bottom-4 right-4 z-50 flex flex-col gap-2 max-w-sm w-full pointer-events-none px-4 sm:px-0"></div>
+
+  <!-- Top Header & WebBluetooth Control Bar -->
+  <header class="sticky top-0 z-30 bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80">
+    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 py-2.5 flex flex-wrap items-center justify-between gap-2.5">
+      
+      <!-- Brand & Live Status Pill -->
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-500/20 to-blue-600/20 border border-cyan-500/40 flex items-center justify-center text-cyan-400 shadow-lg shadow-cyan-950/40 shrink-0">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+        </div>
+        <div class="flex items-center gap-2.5">
+          <div>
+            <h1 class="text-sm sm:text-base font-bold tracking-tight text-white leading-tight">ATORCH T3 <span class="text-cyan-400">PRO</span></h1>
+            <a href="https://fb.com/3ahung" target="_blank" rel="noopener noreferrer" title="Trang Facebook cá nhân Ba Hưng Tech" class="inline-flex items-center gap-1 text-[11px] font-medium text-slate-400 hover:text-cyan-400 transition leading-tight">
+              <span>Ba Hưng Tech</span>
+              <svg class="w-2.5 h-2.5 opacity-80" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </a>
+          </div>
+          <span class="h-5 w-px bg-slate-800 hidden sm:inline-block"></span>
+          <!-- Connection Status Badge -->
+          <div id="conn-badge" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900 border border-slate-700/80 text-slate-400">
+            <span id="conn-dot" class="w-2 h-2 rounded-full bg-slate-500"></span>
+            <span id="conn-text">Chưa kết nối</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unified Compact Control Toolbar -->
+      <div class="flex flex-wrap items-center gap-2">
+        
+        <!-- Primary Connection & Mode Group -->
+        <div class="inline-flex items-center bg-slate-900/90 border border-slate-800 rounded-xl p-1 gap-1">
+          <button id="btn-connect-ble" onclick="toggleBleConnection()" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-cyan-500 hover:bg-cyan-400 text-slate-950 transition shadow-sm shadow-cyan-500/20 active:scale-[0.98]">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7 7l10 10-5 5V2l5 5L7 17"></path>
+            </svg>
+            <span id="btn-connect-label">Kết nối T3</span>
+          </button>
+
+          <button id="btn-sim-toggle" onclick="toggleSimulator()" title="Chạy dữ liệu giả lập khi chưa cắm thiết bị" class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition">
+            <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span id="btn-sim-label">Mô phỏng</span>
+          </button>
+        </div>
+
+        <!-- Hardware Remote Controls Segmented Pill -->
+        <div class="inline-flex items-center bg-slate-900/90 border border-slate-800 rounded-xl p-1 gap-0.5">
+          <button onclick="sendAtorchCommand('T3_PAGE_NEXT')" title="Chuyển trang màn hình trên Atorch T3 (0x33)" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-medium text-emerald-300 hover:bg-slate-800 transition">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
+            </svg>
+            <span>Next trang</span>
+          </button>
+          <span class="h-4 w-px bg-slate-800"></span>
+          <button onclick="sendAtorchCommand('T3_BRIGHTNESS_STEP')" title="Đổi mức độ sáng 25% -&gt; 100% (0x31)" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-medium text-cyan-300 hover:bg-slate-800 transition">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+            <span>Độ sáng</span>
+          </button>
+          <span class="h-4 w-px bg-slate-800"></span>
+          <button onclick="toggleT3Backlight32()" id="btn-t3-backlight-32" title="Bật / Tắt đèn nền màn hình Atorch T3 (0x32)" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-medium text-sky-300 hover:bg-slate-800 transition">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+            <span>ON/OFF màn</span>
+          </button>
+          <span class="h-4 w-px bg-slate-800"></span>
+          <button onclick="resetAllT3Counters()" title="Reset toàn bộ mAh, Wh và Thời gian trên T3 về 0" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold text-amber-300 hover:bg-amber-500/15 transition">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+            </svg>
+            <span>Reset (0)</span>
+          </button>
+        </div>
+
+        <!-- Utilities Group (Hex Console & Offline File Download) -->
+        <div class="inline-flex items-center bg-slate-900/90 border border-slate-800 rounded-xl p-1 gap-1">
+          <button onclick="toggleHexDrawer()" title="Mở bảng kiểm tra gói tin Hex BLE" class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition">
+            <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+            <span>Hex</span>
+          </button>
+          <button onclick="downloadStandaloneApp()" title="Tải file HTML độc lập để lưu trữ hoặc đưa lên GitHub Pages" class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-medium bg-indigo-500/15 hover:bg-indigo-500/25 text-indigo-300 border border-indigo-500/30 transition">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+            </svg>
+            <span class="hidden sm:inline">Tải HTML</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Workspace Container -->
+  <main class="flex-1 max-w-[1600px] w-full mx-auto px-4 sm:px-6 py-5 space-y-5">
+
+    <!-- Collapsible Raw Hex Packet Inspector & Custom TX Console -->
+    <div id="hex-drawer" class="hidden bg-slate-900/90 border border-slate-800 rounded-2xl p-4 space-y-3">
+      <div class="flex flex-wrap items-center justify-between gap-2">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+          <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-300">Luồng gói tin Hex BLE &amp; Bộ điều khiển mã lệnh Atorch T3</h3>
+          <span id="ble-char-info" class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800 text-[11px] font-mono text-emerald-400">Kênh BLE: Chưa kết nối</span>
+        </div>
+        <div class="flex items-center gap-3 text-xs text-slate-400 mono-num">
+          <span>Tốc độ: <strong id="packet-rate" class="text-cyan-400">0 pkt/s</strong></span>
+          <span>Tổng gói: <strong id="packet-count" class="text-slate-200">0</strong></span>
+        </div>
+      </div>
+
+      <!-- Opcode Stepper & Parameter Quick Tester -->
+      <div class="flex flex-wrap items-center justify-between gap-2 bg-slate-950/90 border border-slate-800/80 rounded-xl p-2.5 text-xs">
+        <div class="flex flex-wrap items-center gap-1.5">
+          <span class="text-slate-400 font-medium mr-1">Dò mã lệnh T3:</span>
+          <button onclick="stepTestOpcode(-1)" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 font-mono">◀ Lùi 1 mã</button>
+          <span id="current-probe-opcode" class="px-2.5 py-1 rounded-lg bg-cyan-950/60 border border-cyan-500/40 text-cyan-300 font-mono font-bold">0x32</span>
+          <button onclick="stepTestOpcode(1)" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 font-mono">Tiến 1 mã ▶</button>
+        </div>
+        <div class="flex flex-wrap items-center gap-1.5">
+          <span class="text-slate-400 font-medium mr-1">Test tham số 0x32 (Màn hình):</span>
+          <button onclick="sendRawPreset('FF 55 11 03 32 00 00 00 01')" class="px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-cyan-300 font-mono">val=01</button>
+          <button onclick="sendRawPreset('FF 55 11 03 32 00 00 00 02')" class="px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-cyan-300 font-mono">val=02</button>
+          <button onclick="sendRawPreset('FF 55 11 03 32 00 00 00 03')" class="px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-cyan-300 font-mono">val=03</button>
+          <button onclick="sendRawPreset('FF 55 11 03 32 00 00 00 64')" class="px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-cyan-300 font-mono">val=64</button>
+        </div>
+      </div>
+
+      <!-- Custom TX Hex Sender -->
+      <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+        <input type="text" id="input-custom-hex" value="FF 55 11 03 33 00 00 00 00" placeholder="Nhập chuỗi Hex TX (VD: FF 55 11 03 33 00 00 00 00)" class="flex-1 bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs font-mono text-cyan-300 focus:outline-none focus:border-cyan-500">
+        <label class="inline-flex items-center gap-1.5 text-xs text-slate-300 px-2 select-none cursor-pointer">
+          <input type="checkbox" id="chk-auto-checksum" checked="" class="rounded bg-slate-800 border-slate-600 text-cyan-500">
+          <span>Tự tính Checksum Atorch</span>
+        </label>
+        <button onclick="sendCustomHexCommand()" class="px-4 py-2 rounded-xl text-xs font-semibold bg-cyan-500 hover:bg-cyan-400 text-slate-950 transition">
+          Gửi mã Hex TX
+        </button>
+      </div>
+
+      <div id="hex-log-output" class="bg-slate-950 border border-slate-800/80 rounded-xl p-3 font-mono text-xs text-emerald-400 overflow-x-auto whitespace-nowrap">
+        Chờ khung dữ liệu 36-byte từ Atorch T3...
+      </div>
+    </div>
+
+    <!-- Primary Live Telemetry Cards (4 KPIs: Voltage, Current, Power, Capacity/Energy) -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+      
+      <!-- Card 1: Voltage (V) -->
+      <div class="bg-slate-900/80 border border-slate-800/90 rounded-2xl p-5 relative overflow-hidden group hover:border-amber-500/40 transition">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Điện áp (Voltage)</span>
+          <span class="px-2 py-0.5 rounded-md text-[11px] font-mono font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">VBUS</span>
+        </div>
+        <div class="flex items-baseline gap-2 my-1">
+          <span id="val-voltage" class="text-4xl sm:text-5xl font-bold mono-num text-amber-400 tracking-tight">0.000</span>
+          <span class="text-lg font-semibold text-amber-500/80">V</span>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-800/80 grid grid-cols-3 gap-2 text-xs">
+          <div>
+            <span class="text-slate-500 block text-[11px]">Thấp nhất</span>
+            <span id="stat-v-min" class="mono-num font-semibold text-slate-300">0.00V</span>
+          </div>
+          <div>
+            <span class="text-slate-500 block text-[11px]">Trung bình</span>
+            <span id="stat-v-avg" class="mono-num font-semibold text-slate-300">0.00V</span>
+          </div>
+          <div class="text-right">
+            <span class="text-slate-500 block text-[11px]">Đỉnh (Max)</span>
+            <span id="stat-v-max" class="mono-num font-semibold text-amber-300">0.00V</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Current (A) -->
+      <div class="bg-slate-900/80 border border-slate-800/90 rounded-2xl p-5 relative overflow-hidden group hover:border-cyan-500/40 transition">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Dòng điện (Current)</span>
+          <div class="flex items-center gap-1.5">
+            <select id="select-current-scale" onchange="updateCurrentScale(this.value)" title="Chọn hệ số chia dòng điện cho khớp màn hình Atorch T3" class="px-2 py-0.5 rounded-md text-[11px] font-mono font-semibold bg-slate-950 text-cyan-300 border border-cyan-500/30 focus:outline-none cursor-pointer">
+              <option value="100">/ 100 (10mA - Chuẩn T3)</option>
+              <option value="1000">/ 1000 (mA - J7-C)</option>
+              <option value="10000">/ 10000 (0.1mA)</option>
+            </select>
+            <span class="px-2 py-0.5 rounded-md text-[11px] font-mono font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">IBUS</span>
+          </div>
+        </div>
+        <div class="flex items-baseline gap-2 my-1">
+          <span id="val-current" class="text-4xl sm:text-5xl font-bold mono-num text-cyan-400 tracking-tight">0.000</span>
+          <span class="text-lg font-semibold text-cyan-500/80">A</span>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-800/80 grid grid-cols-3 gap-2 text-xs">
+          <div>
+            <span class="text-slate-500 block text-[11px]">Nội trở tải</span>
+            <span id="stat-resistance" class="mono-num font-semibold text-slate-300">0.0 Ω</span>
+          </div>
+          <div>
+            <span class="text-slate-500 block text-[11px]">Trung bình</span>
+            <span id="stat-a-avg" class="mono-num font-semibold text-slate-300">0.00A</span>
+          </div>
+          <div class="text-right">
+            <span class="text-slate-500 block text-[11px]">Đỉnh (Max)</span>
+            <span id="stat-a-max" class="mono-num font-semibold text-cyan-300">0.00A</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Power (W) -->
+      <div class="bg-slate-900/80 border border-slate-800/90 rounded-2xl p-5 relative overflow-hidden group hover:border-emerald-500/40 transition">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Công suất (Power)</span>
+          <span class="px-2 py-0.5 rounded-md text-[11px] font-mono font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">WATT</span>
+        </div>
+        <div class="flex items-baseline gap-2 my-1">
+          <span id="val-power" class="text-4xl sm:text-5xl font-bold mono-num text-emerald-400 tracking-tight">0.00</span>
+          <span class="text-lg font-semibold text-emerald-500/80">W</span>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-800/80 grid grid-cols-3 gap-2 text-xs">
+          <div>
+            <span class="text-slate-500 block text-[11px]">Hiệu suất ước tính</span>
+            <span id="stat-load-level" class="mono-num font-semibold text-slate-300">0%</span>
+          </div>
+          <div>
+            <span class="text-slate-500 block text-[11px]">Trung bình</span>
+            <span id="stat-w-avg" class="mono-num font-semibold text-slate-300">0.00W</span>
+          </div>
+          <div class="text-right">
+            <span class="text-slate-500 block text-[11px]">Đỉnh (Max)</span>
+            <span id="stat-w-max" class="mono-num font-semibold text-emerald-300">0.00W</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Capacity & Energy (mAh / Wh) -->
+      <div class="bg-slate-900/80 border border-slate-800/90 rounded-2xl p-5 relative overflow-hidden group hover:border-purple-500/40 transition">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Dung lượng &amp; Năng lượng</span>
+          <span id="val-timer" class="px-2 py-0.5 rounded-md text-[11px] font-mono font-semibold bg-purple-500/10 text-purple-300 border border-purple-500/20">00:00:00</span>
+        </div>
+        <div class="flex items-baseline justify-between gap-2 my-1">
+          <div class="flex items-baseline gap-1.5">
+            <span id="val-mah" class="text-3xl sm:text-4xl font-bold mono-num text-purple-400 tracking-tight">0</span>
+            <span class="text-sm font-semibold text-purple-400/80">mAh</span>
+          </div>
+          <div class="flex items-baseline gap-1">
+            <span id="val-wh" class="text-2xl sm:text-3xl font-bold mono-num text-indigo-300 tracking-tight">0.00</span>
+            <span class="text-xs font-semibold text-indigo-400/80">Wh</span>
+          </div>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
+          <span class="text-slate-500">Dữ liệu tích lũy trên T3</span>
+          <span id="stat-session-mah" class="mono-num font-semibold text-purple-300">Phiên ghi: +0 mAh</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Secondary Hardware Telemetry Strip (D+/D-, Protocol Detection, Temp, Auto-CutOff) -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      
+      <!-- Data Lines & Fast Charge Protocol -->
+      <div class="bg-slate-900/80 border border-slate-800/90 rounded-2xl p-4 flex items-center justify-between gap-4">
+        <div class="space-y-1">
+          <div class="text-xs font-medium text-slate-400">Đường dữ liệu USB (D+ / D-)</div>
+          <div class="flex items-center gap-4 mono-num text-sm">
+            <span>D+: <strong id="val-dplus" class="text-sky-400">0.00V</strong></span>
+            <span>D-: <strong id="val-dminus" class="text-rose-400">0.00V</strong></span>
+          </div>
+        </div>
+        <div class="text-right">
+          <span class="text-[11px] text-slate-500 block mb-1">Chuẩn sạc nhận diện</span>
+          <span id="val-protocol" class="inline-flex items-center px-3 py-1 rounded-lg text-xs font-bold bg-indigo-500/15 text-indigo-300 border border-indigo-500/30">
+            Chờ tải...
+          </span>
+        </div>
+      </div>
+
+      <!-- Board Temperature -->
+      <div class="bg-slate-900/80 border border-slate-800/90 rounded-2xl p-4 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <div id="temp-icon-box" class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="text-xs font-medium text-slate-400">Nhiệt độ cảm biến T3</div>
+            <div class="flex items-baseline gap-2">
+              <span id="val-temp" class="text-2xl font-bold mono-num text-slate-100">28</span>
+              <span class="text-xs text-slate-400">°C</span>
+              <span class="text-xs text-slate-500 ml-1">(Đỉnh: <span id="stat-temp-max" class="mono-num text-slate-300">28°C</span>)</span>
+            </div>
+          </div>
+        </div>
+        <span id="temp-status-badge" class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+          Bình thường
+        </span>
+      </div>
+
+      <!-- Auto-Cutoff Trigger for Power Bank / Full Charge Testing -->
+      <div class="bg-slate-900/80 border border-slate-800/90 rounded-2xl p-4 flex items-center justify-between gap-3">
+        <div>
+          <div class="flex items-center gap-2">
+            <input type="checkbox" id="chk-auto-stop" class="w-4 h-4 rounded bg-slate-800 border-slate-600 text-cyan-500 focus:ring-cyan-500/40">
+            <label for="chk-auto-stop" class="text-xs font-semibold text-slate-200 cursor-pointer">Tự động dừng ghi khi đầy pin</label>
+          </div>
+          <p class="text-[11px] text-slate-400 mt-1">Tự chốt phiên khi dòng &lt; 0.05A liên tục 10 giây</p>
+        </div>
+        <span id="auto-stop-state" class="px-2.5 py-1 rounded-lg text-[11px] font-mono bg-slate-800 text-slate-400 border border-slate-700">
+          TẮT
+        </span>
+      </div>
+
+    </section>
+
+    <!-- Main Analytical Workspace: Real-Time Chart (Left) + Device QC Recorder Panel (Right) -->
+    <section class="grid grid-cols-1 xl:grid-cols-12 gap-5">
+      
+      <!-- Real-Time Multi-Axis Chart (8 Columns on XL) — ChargerLAB POWER-Z Style -->
+      <div class="xl:col-span-8 bg-[#060911] border border-slate-800/90 rounded-2xl p-4 sm:p-5 flex flex-col justify-between shadow-2xl">
+        <!-- Top Title & Window / Zoom Controls -->
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+          <div>
+            <h2 class="text-base font-bold text-white flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded bg-rose-500/15 border border-rose-500/40 text-rose-400 font-mono text-[11px] tracking-wider">POWER-Z SCOPE</span>
+              <span>Đồ thị dao động nguồn thời gian thực</span>
+              <span id="rec-live-pill" class="hidden inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-rose-500/15 text-rose-400 border border-rose-500/30">
+                <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse-glow"></span>
+                REC
+              </span>
+            </h2>
+          </div>
+
+          <!-- Chart Controls: Series Toggle & Window -->
+          <div class="flex flex-wrap items-center gap-1.5">
+            <div class="flex items-center bg-slate-950 border border-slate-800 rounded-lg p-0.5 text-xs">
+              <button onclick="setChartWindow(60)" id="win-60" class="win-btn px-2.5 py-1 rounded-md font-medium bg-slate-800 text-white">1m</button>
+              <button onclick="setChartWindow(300)" id="win-300" class="win-btn px-2.5 py-1 rounded-md font-medium text-slate-400 hover:text-white">5m</button>
+              <button onclick="setChartWindow(0)" id="win-0" class="win-btn px-2.5 py-1 rounded-md font-medium text-slate-400 hover:text-white">All</button>
+            </div>
+            <button onclick="toggleChartAutoScale()" id="btn-chart-autoscale" title="Chuyển đổi giữa thang đo từ gốc 0 hoặc phóng sát biên độ dao động" class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition">
+              Gốc trục: 0
+            </button>
+            <div class="flex items-center bg-slate-950 border border-slate-800 rounded-lg p-0.5 text-xs gap-0.5">
+              <button onclick="zoomChart(1.25)" title="Phóng to (Zoom In)" class="px-2 py-1 rounded-md font-bold text-slate-300 hover:bg-slate-800 hover:text-cyan-400 transition">+</button>
+              <button onclick="zoomChart(0.8)" title="Thu nhỏ (Zoom Out)" class="px-2 py-1 rounded-md font-bold text-slate-300 hover:bg-slate-800 hover:text-cyan-400 transition">−</button>
+              <button onclick="resetChartZoom()" title="Đặt lại góc nhìn mặc định (Reset Zoom)" class="px-2 py-1 rounded-md font-medium text-cyan-400 hover:bg-slate-800 transition">Reset</button>
+            </div>
+            <button onclick="clearLiveChart()" class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition">
+              Clear
+            </button>
+          </div>
+        </div>
+
+        <!-- POWER-Z Style Inline Live Telemetry HUD Strip (Ordered: WATT -> VBUS -> IBUS -> D+ -> D-) -->
+        <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 mb-3 bg-[#0a0f1c] border border-slate-800/90 rounded-xl px-3 py-2 font-mono">
+          <div class="flex items-center justify-between sm:justify-start sm:gap-2">
+            <span class="text-[11px] font-bold text-emerald-400">WATT</span>
+            <span id="hud-chart-w" class="text-xs sm:text-sm font-bold text-emerald-300">0.00W</span>
+          </div>
+          <div class="flex items-center justify-between sm:justify-start sm:gap-2">
+            <span class="text-[11px] font-bold text-rose-400">VBUS</span>
+            <span id="hud-chart-v" class="text-xs sm:text-sm font-bold text-rose-300">0.000V</span>
+          </div>
+          <div class="flex items-center justify-between sm:justify-start sm:gap-2">
+            <span class="text-[11px] font-bold text-sky-400">IBUS</span>
+            <span id="hud-chart-a" class="text-xs sm:text-sm font-bold text-sky-300">0.000A</span>
+          </div>
+          <div class="flex items-center justify-between sm:justify-start sm:gap-2">
+            <span class="text-[11px] font-bold text-amber-400">D+</span>
+            <span id="hud-chart-dp" class="text-xs sm:text-sm font-bold text-amber-300">0.00V</span>
+          </div>
+          <div class="flex items-center justify-between sm:justify-start sm:gap-2">
+            <span class="text-[11px] font-bold text-purple-400">D-</span>
+            <span id="hud-chart-dm" class="text-xs sm:text-sm font-bold text-purple-300">0.00V</span>
+          </div>
+        </div>
+
+        <!-- Canvas Wrapper with POWER-Z Oscilloscope Frame -->
+        <div class="relative w-full h-[330px] sm:h-[380px] bg-[#04070d] border border-slate-800/90 rounded-xl p-2" ondblclick="resetChartZoom()">
+          <canvas id="telemetryChart"></canvas>
+        </div>
+
+        <!-- POWER-Z Channel Legend & Sample Counter -->
+        <div class="mt-3 pt-2.5 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-2 text-xs">
+          <div class="flex flex-wrap items-center gap-3 sm:gap-4">
+            <label class="inline-flex items-center gap-1.5 cursor-pointer select-none">
+              <input type="checkbox" checked="" onchange="toggleDataset(2)" class="rounded text-emerald-400 bg-slate-900 border-slate-700 focus:ring-0">
+              <span class="w-3.5 h-0.5 bg-emerald-400"></span>
+              <span class="text-emerald-300 font-mono font-semibold">POWER (W)</span>
+            </label>
+            <label class="inline-flex items-center gap-1.5 cursor-pointer select-none">
+              <input type="checkbox" checked="" onchange="toggleDataset(0)" class="rounded text-rose-500 bg-slate-900 border-slate-700 focus:ring-0">
+              <span class="w-3.5 h-0.5 bg-rose-500"></span>
+              <span class="text-rose-300 font-mono font-semibold">VBUS (V)</span>
+            </label>
+            <label class="inline-flex items-center gap-1.5 cursor-pointer select-none">
+              <input type="checkbox" checked="" onchange="toggleDataset(1)" class="rounded text-sky-400 bg-slate-900 border-slate-700 focus:ring-0">
+              <span class="w-3.5 h-0.5 bg-sky-400"></span>
+              <span class="text-sky-300 font-mono font-semibold">IBUS (A)</span>
+            </label>
+            <label class="inline-flex items-center gap-1.5 cursor-pointer select-none">
+              <input type="checkbox" onchange="toggleDataset(3)" class="rounded text-amber-400 bg-slate-900 border-slate-700 focus:ring-0">
+              <span class="w-3.5 h-0.5 bg-amber-400"></span>
+              <span class="text-amber-300 font-mono font-semibold">D+ (V)</span>
+            </label>
+            <label class="inline-flex items-center gap-1.5 cursor-pointer select-none">
+              <input type="checkbox" onchange="toggleDataset(4)" class="rounded text-purple-400 bg-slate-900 border-slate-700 focus:ring-0">
+              <span class="w-3.5 h-0.5 bg-purple-400"></span>
+              <span class="text-purple-300 font-mono font-semibold">D- (V)</span>
+            </label>
+          </div>
+          <div class="text-slate-400 mono-num text-[11px]">
+            Samples: <strong id="session-sample-count" class="text-slate-200">0</strong> pts
+          </div>
+        </div>
+      </div>
+
+      <!-- Device QC Session Recorder & Metadata Form (4 Columns on XL) -->
+      <div class="xl:col-span-4 bg-slate-900/80 border border-slate-800/90 rounded-2xl p-5 flex flex-col justify-between space-y-4">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <div>
+              <h2 class="text-base font-bold text-white">Ghi nhận kết quả test thiết bị</h2>
+              <p class="text-xs text-slate-400">Lưu thông số đo thực tế vào lịch sử báo cáo QC</p>
+            </div>
+            <span id="rec-timer-badge" class="mono-num text-xs font-bold px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-300">
+              00:00:00
+            </span>
+          </div>
+
+          <!-- Device Metadata Inputs -->
+          <div class="space-y-3">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">Tên thiết bị / Mã sản phẩm (SKU) <span class="text-rose-400">*</span></label>
+              <input type="text" id="input-device-name" placeholder="VD: Củ sạc Anker GaN 65W / Pin dự phòng 10000mAh" class="w-full px-3.5 py-2 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition">
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Phân loại test</label>
+                <select id="input-device-category" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-sm text-slate-200 focus:outline-none focus:border-cyan-500">
+                  <option value="Củ sạc / Adapter">Củ sạc / Adapter</option>
+                  <option value="Sạc dự phòng">Sạc dự phòng</option>
+                  <option value="Cáp sạc USB-C/Lightning">Cáp sạc (Sụt áp)</option>
+                  <option value="Thiết bị tiêu thụ / Tải">Thiết bị tiêu thụ</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Đánh giá QC</label>
+                <select id="input-qc-status" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-sm text-slate-200 focus:outline-none focus:border-cyan-500">
+                  <option value="ĐẠT (PASS)">✅ ĐẠT (PASS)</option>
+                  <option value="KHÔNG ĐẠT (FAIL)">❌ KHÔNG ĐẠT (FAIL)</option>
+                  <option value="CẦN THEO DÕI">⚠️ CẦN THEO DÕI</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">Ghi chú kỹ thuật</label>
+              <input type="text" id="input-device-notes" placeholder="VD: Test tải giả 20V-3.25A trong 15 phút, nhiệt độ ổn định..." class="w-full px-3.5 py-2 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition">
+            </div>
+          </div>
+
+          <!-- Active Session Summary Box -->
+          <div class="bg-slate-950/90 border border-slate-800/90 rounded-xl p-3.5 space-y-2">
+            <div class="text-[11px] font-semibold uppercase tracking-wider text-slate-400">Tóm tắt phiên đo hiện tại</div>
+            <div class="grid grid-cols-3 gap-2 text-xs">
+              <div class="bg-slate-900/90 p-2 rounded-lg border border-slate-800/60">
+                <span class="text-slate-500 block text-[10px]">Công suất đỉnh</span>
+                <strong id="rec-w-max" class="mono-num text-emerald-400 text-sm">0.00 W</strong>
+              </div>
+              <div class="bg-slate-900/90 p-2 rounded-lg border border-slate-800/60">
+                <span class="text-slate-500 block text-[10px]">Dung lượng đo</span>
+                <strong id="rec-mah" class="mono-num text-purple-400 text-sm">0 mAh</strong>
+              </div>
+              <div class="bg-slate-900/90 p-2 rounded-lg border border-slate-800/60">
+                <span class="text-slate-500 block text-[10px]">Năng lượng đo</span>
+                <strong id="rec-wh" class="mono-num text-indigo-300 text-sm">0.00 Wh</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Session Recording Action Buttons -->
+        <div class="space-y-2.5 pt-2">
+          <div class="grid grid-cols-2 gap-2">
+            <button id="btn-start-record" onclick="toggleRecording()" class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-rose-600 hover:bg-rose-500 text-white transition shadow-lg shadow-rose-950/40">
+              <span class="w-2.5 h-2.5 rounded-full bg-white"></span>
+              <span id="btn-record-label">Bắt đầu ghi phiên</span>
+            </button>
+            <button onclick="resetCurrentSessionStats()" class="flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition">
+              Làm mới phiên
+            </button>
+          </div>
+
+          <button onclick="saveDeviceTestResult()" class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-sm font-bold bg-emerald-500 hover:bg-emerald-400 text-slate-950 transition shadow-lg shadow-emerald-950/40">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Lưu kết quả thiết bị vào báo cáo
+          </button>
+
+          <button onclick="exportCurrentSessionCSV()" class="w-full flex items-center justify-center gap-2 px-3 py-2 rounded-xl text-xs font-semibold bg-slate-950 hover:bg-slate-800 text-cyan-400 border border-slate-800 transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+            </svg>
+            Xuất log chi tiết từng giây phiên này (.CSV)
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Saved Device Benchmark History & Multi-Format Export Table -->
+    <section class="bg-slate-900/80 border border-slate-800/90 rounded-2xl p-5 space-y-4">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <div>
+          <h2 class="text-base sm:text-lg font-bold text-white flex items-center gap-2">
+            Danh sách kết quả kiểm tra thiết bị đã lưu
+            <span id="saved-count-badge" class="px-2.5 py-0.5 rounded-full text-xs font-mono bg-slate-800 text-cyan-400 border border-slate-700">0</span>
+          </h2>
+          <p class="text-xs text-slate-400">Dữ liệu tự động lưu trên trình duyệt. Hỗ trợ xuất Excel/CSV tổng hợp hoặc in phiếu kiểm định QC.</p>
+        </div>
+
+        <!-- Export Buttons Group -->
+        <div class="flex flex-wrap items-center gap-2">
+          <button onclick="exportAllBenchmarksCSV()" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-emerald-600 hover:bg-emerald-500 text-white transition shadow-md">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+            Xuất Báo cáo Excel / CSV
+          </button>
+
+          <button onclick="clearAllSavedBenchmarks()" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-medium bg-slate-800 hover:bg-rose-950/70 text-slate-300 hover:text-rose-300 border border-slate-700 transition">
+            Xóa lịch sử
+          </button>
+        </div>
+      </div>
+
+      <!-- Responsive Table -->
+      <div class="overflow-x-auto rounded-xl border border-slate-800">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-slate-950 text-slate-400 text-[11px] uppercase tracking-wider border-b border-slate-800">
+              <th class="py-3 px-4 font-semibold">Thời gian / Thiết bị</th>
+              <th class="py-3 px-3 font-semibold">Phân loại</th>
+              <th class="py-3 px-3 font-semibold">Thời lượng</th>
+              <th class="py-3 px-3 font-semibold">Áp TB / Đỉnh</th>
+              <th class="py-3 px-3 font-semibold">Dòng Đỉnh</th>
+              <th class="py-3 px-3 font-semibold">Công suất Đỉnh</th>
+              <th class="py-3 px-3 font-semibold">Dung lượng</th>
+              <th class="py-3 px-3 font-semibold">Chuẩn sạc</th>
+              <th class="py-3 px-3 font-semibold">Kết luận QC</th>
+              <th class="py-3 px-4 font-semibold text-right">Thao tác</th>
+            </tr>
+          </thead>
+          <tbody id="benchmark-table-body" class="divide-y divide-slate-800/80 text-xs sm:text-sm">
+          <tr>
+            <td colspan="10" class="py-10 px-4 text-center text-slate-500">
+              Chưa có thiết bị nào được lưu. Nhập tên thiết bị ở khung bên trên và nhấn <strong class="text-slate-300">"Lưu kết quả thiết bị vào báo cáo"</strong>.
+            </td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Printable QC Certificate Modal -->
+  <div id="print-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div id="print-report-area" class="bg-white text-slate-900 rounded-2xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl space-y-6">
+      <div class="flex items-start justify-between border-b-2 border-slate-900 pb-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-cyan-700">BÁO CÁO KIỂM ĐỊNH THIẾT BỊ NGUỒN USB</span>
+          <h3 id="modal-dev-name" class="text-2xl font-bold text-slate-900 mt-1">Tên thiết bị</h3>
+          <p id="modal-dev-meta" class="text-xs text-slate-500 mt-1">Thời gian test: -- | Phân loại: --</p>
+        </div>
+        <div id="modal-qc-stamp" class="px-3.5 py-1.5 rounded-lg border-2 font-bold text-sm uppercase">
+          ĐẠT (PASS)
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <div class="p-3 bg-slate-100 rounded-xl">
+          <span class="text-[11px] text-slate-500 block">Điện áp TB / Max</span>
+          <strong id="modal-v" class="mono-num text-base text-slate-900">--</strong>
+        </div>
+        <div class="p-3 bg-slate-100 rounded-xl">
+          <span class="text-[11px] text-slate-500 block">Dòng điện Max</span>
+          <strong id="modal-a" class="mono-num text-base text-slate-900">--</strong>
+        </div>
+        <div class="p-3 bg-slate-100 rounded-xl">
+          <span class="text-[11px] text-slate-500 block">Công suất Max / TB</span>
+          <strong id="modal-w" class="mono-num text-base text-slate-900">--</strong>
+        </div>
+        <div class="p-3 bg-slate-100 rounded-xl">
+          <span class="text-[11px] text-slate-500 block">Dung lượng đo được</span>
+          <strong id="modal-cap" class="mono-num text-base text-slate-900">--</strong>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 text-sm border-t border-b border-slate-200 py-4">
+        <div><span class="text-slate-500">Thời gian đo:</span> <strong id="modal-dur" class="mono-num">--</strong></div>
+        <div><span class="text-slate-500">Chuẩn sạc nhận diện:</span> <strong id="modal-proto">--</strong></div>
+        <div><span class="text-slate-500">Nhiệt độ tối đa:</span> <strong id="modal-temp" class="mono-num">--</strong></div>
+        <div><span class="text-slate-500">Thiết bị đo:</span> <strong>Atorch T3 USB Tester</strong></div>
+      </div>
+
+      <div>
+        <span class="text-xs font-semibold uppercase text-slate-500 block mb-1">Ghi chú kỹ thuật:</span>
+        <p id="modal-notes" class="text-sm text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-200 min-h-[48px]">--</p>
+      </div>
+
+      <div class="flex items-center justify-end gap-3 pt-2 no-print">
+        <button onclick="closePrintModal()" class="px-4 py-2 rounded-xl text-sm font-medium bg-slate-200 hover:bg-slate-300 text-slate-800">Đóng</button>
+        <button onclick="window.print()" class="px-5 py-2 rounded-xl text-sm font-bold bg-slate-900 hover:bg-slate-800 text-white">In / Lưu PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // =========================================================================
+    // 1. GLOBAL STATE & CONFIGURATION
+    // =========================================================================
+    const ATORCH_SERVICE_UUID = 0xffe0;
+    const ATORCH_CHAR_UUID = 0xffe1;
+    const STORAGE_KEY_BENCHMARKS = 'atorch_t3_qc_benchmarks_v1';
+    const STORAGE_KEY_CURRENT_SCALE = 'atorch_t3_current_scale_v1';
+
+    let bleDevice = null;
+    let bleCharacteristic = null;
+    let bleWriteCharacteristics = [];
+    let isConnectedBLE = false;
+    let rxBuffer = new Uint8Array(0);
+    let isT3ScreenOn = true;
+    let lastT3Brightness = 80;
+    let probeOpcode = 0x32;
+    let isSimulating = false;
+    let simInterval = null;
+    let simState = { seconds: 0, mah: 0, wh: 0 };
+
+    // Default current divider = 100 (10mA unit verified from user's T3 hex dump)
+    let currentScaleDivider = Number(localStorage.getItem(STORAGE_KEY_CURRENT_SCALE)) || 100;
+
+    let chartInstance = null;
+    let chartWindowSeconds = 60; // 60s, 300s, or 0 (all)
+    let isChartAutoScale = false; // Default: start all Y axes cleanly from 0 with generous headroom
+
+    // Packet rate monitoring
+    let totalPacketsReceived = 0;
+    let packetsInLastSecond = 0;
+
+    // Live session telemetry & statistics
+    let isRecording = false;
+    let autoStopLowCurrentSeconds = 0;
+    let sessionStartTimestamp = null;
+    let sessionBaseMah = null;
+    let sessionBaseWh = null;
+
+    let sessionStats = {
+      sampleCount: 0,
+      vMin: Infinity,
+      vMax: 0,
+      vSum: 0,
+      aMax: 0,
+      aSum: 0,
+      wMax: 0,
+      wSum: 0,
+      tempMax: 0,
+      lastProtocol: 'Chờ tải...',
+      lastDurationStr: '00:00:00',
+      sessionMah: 0,
+      sessionWh: 0,
+      samples: [] // Array of { time, v, a, w, mah, wh, temp }
+    };
+
+    // =========================================================================
+    // 2. TOAST NOTIFICATION & UI HELPERS
+    // =========================================================================
+    function showToast(message, type = 'info') {
+      const container = document.getElementById('toast-container');
+      if (!container) return;
+
+      const colorMap = {
+        success: 'bg-emerald-950/95 border-emerald-500/60 text-emerald-200',
+        error: 'bg-rose-950/95 border-rose-500/60 text-rose-200',
+        warning: 'bg-amber-950/95 border-amber-500/60 text-amber-200',
+        info: 'bg-slate-900/95 border-cyan-500/50 text-cyan-200'
+      };
+
+      const toast = document.createElement('div');
+      toast.className = `pointer-events-auto px-4 py-3 rounded-xl border shadow-xl text-xs sm:text-sm font-medium backdrop-blur-md transition-all duration-300 ${colorMap[type] || colorMap.info}`;
+      toast.textContent = message;
+      container.appendChild(toast);
+
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateY(8px)';
+        setTimeout(() => toast.remove(), 300);
+      }, 4200);
+    }
+
+    function updateConnectionUI(connected, deviceName = '') {
+      const badge = document.getElementById('conn-badge');
+      const dot = document.getElementById('conn-dot');
+      const text = document.getElementById('conn-text');
+      const btn = document.getElementById('btn-connect-ble');
+      const btnLabel = document.getElementById('btn-connect-label');
+
+      if (connected) {
+        badge.className = 'inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-950/80 border border-emerald-500/50 text-emerald-300';
+        dot.className = 'w-2 h-2 rounded-full bg-emerald-400 animate-pulse-glow';
+        text.textContent = deviceName;
+        btn.className = 'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-rose-600 hover:bg-rose-500 text-white transition shadow-sm shadow-rose-500/20';
+        btnLabel.textContent = 'Ngắt T3';
+      } else {
+        badge.className = 'inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900 border border-slate-700/80 text-slate-400';
+        dot.className = 'w-2 h-2 rounded-full bg-slate-500';
+        text.textContent = 'Chưa kết nối';
+        btn.className = 'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-cyan-500 hover:bg-cyan-400 text-slate-950 transition shadow-sm shadow-cyan-500/20';
+        btnLabel.textContent = 'Kết nối T3';
+      }
+    }
+
+    function toggleHexDrawer() {
+      const drawer = document.getElementById('hex-drawer');
+      if (drawer) drawer.classList.toggle('hidden');
+    }
+
+    function updateCurrentScale(val) {
+      const parsed = Number(val);
+      if ([100, 1000, 10000].includes(parsed)) {
+        currentScaleDivider = parsed;
+        localStorage.setItem(STORAGE_KEY_CURRENT_SCALE, String(parsed));
+        showToast(`Đã đổi hệ số chia dòng điện sang / ${parsed}`, 'info');
+      }
+    }
+
+    // =========================================================================
+    // 3. STANDALONE HTML EXPORT (BYPASS SANDBOXED PREVIEW IFRAME)
+    // =========================================================================
+    function isBluetoothBlockedByPolicy() {
+      // Only treat as blocked when actually embedded inside an iframe
+      if (window.self === window.top) return false;
+      try {
+        if (document.permissionsPolicy && typeof document.permissionsPolicy.allowsFeature === 'function') {
+          return !document.permissionsPolicy.allowsFeature('bluetooth');
+        }
+        if (document.featurePolicy && typeof document.featurePolicy.allowsFeature === 'function') {
+          return !document.featurePolicy.allowsFeature('bluetooth');
+        }
+      } catch (_) {
+        // Ignore policy introspection errors
+      }
+      return true;
+    }
+
+    async function downloadStandaloneApp() {
+      try {
+        const res = await fetch(window.location.href);
+        if (res.ok) {
+          const cleanHtml = await res.text();
+          if (cleanHtml.includes('<!DOCTYPE html>') && cleanHtml.includes('ATORCH T3')) {
+            downloadFile(cleanHtml, 'atorch-t3-pro-studio.html', 'text/html;charset=utf-8;');
+            showToast('Đã tải bản sạch "atorch-t3-pro-studio.html"! Hãy mở bằng Chrome/Edge.', 'success');
+            return;
+          }
+        }
+      } catch (_) {
+        // Fallback to DOM serialization if blob fetch is blocked
+      }
+
+      const clone = document.documentElement.cloneNode(true);
+      const canvas = clone.querySelector('#telemetryChart');
+      if (canvas) {
+        canvas.removeAttribute('style');
+        canvas.removeAttribute('width');
+        canvas.removeAttribute('height');
+      }
+      const banner = clone.querySelector('#ble-policy-banner');
+      if (banner) banner.classList.add('hidden');
+
+      const fullHtml = '<!DOCTYPE html>\n' + clone.outerHTML;
+      downloadFile(fullHtml, 'atorch-t3-pro-studio.html', 'text/html;charset=utf-8;');
+      showToast('Đã tải file "atorch-t3-pro-studio.html"! Hãy mở file này trực tiếp bằng Chrome/Edge.', 'success');
+    }
+
+    // =========================================================================
+    // 4. WEB BLUETOOTH CONNECTION & ATORCH T3 PROTOCOL PARSER
+    // =========================================================================
+    async function toggleBleConnection() {
+      if (isConnectedBLE && bleDevice) {
+        try {
+          if (bleDevice.gatt.connected) {
+            bleDevice.gatt.disconnect();
+          }
+        } catch (_) {
+          // Ignore disconnect cleanup error
+        }
+        onBleDisconnected();
+        return;
+      }
+
+      if (!navigator.bluetooth) {
+        showToast('Trình duyệt không hỗ trợ WebBluetooth. Hãy dùng Chrome/Edge trên PC hoặc Android!', 'error');
+        return;
+      }
+
+      // Prevent SecurityError inside sandboxed preview iframe before calling requestDevice
+      if (isBluetoothBlockedByPolicy()) {
+        const banner = document.getElementById('ble-policy-banner');
+        if (banner) banner.classList.remove('hidden');
+        showToast('Khung Preview bị khóa Bluetooth. Hãy nhấn "Tải bản chạy BLE thật" hoặc dùng "Chạy Mô phỏng T3"!', 'warning');
+        return;
+      }
+
+      if (isSimulating) {
+        toggleSimulator();
+      }
+
+      try {
+        showToast('Đang mở cửa sổ quét thiết bị Bluetooth Atorch T3...', 'info');
+        bleDevice = await navigator.bluetooth.requestDevice({
+          acceptAllDevices: true,
+          optionalServices: [ATORCH_SERVICE_UUID, 0xfff0, '0000ffe0-0000-1000-8000-00805f9b34fb']
+        });
+
+        bleDevice.addEventListener('gattserverdisconnected', onBleDisconnected);
+
+        const server = await bleDevice.gatt.connect();
+        const service = await server.getPrimaryService(ATORCH_SERVICE_UUID);
+        const chars = await service.getCharacteristics();
+
+        bleWriteCharacteristics = [];
+        bleCharacteristic = null;
+        const charSummary = [];
+
+        for (const ch of chars) {
+          const props = [];
+          if (ch.properties.notify || ch.properties.indicate) {
+            props.push('NOTIFY');
+            await ch.startNotifications();
+            ch.addEventListener('characteristicvaluechanged', handleBleNotification);
+            if (!bleCharacteristic) bleCharacteristic = ch;
+          }
+          if (ch.properties.write || ch.properties.writeWithoutResponse) {
+            props.push('WRITE');
+            bleWriteCharacteristics.push(ch);
+          }
+          const shortUuid = ch.uuid.slice(4, 8).toUpperCase();
+          charSummary.push(`0x${shortUuid}[${props.join('/') || 'READ'}]`);
+        }
+
+        const charInfoEl = document.getElementById('ble-char-info');
+        if (charInfoEl) {
+          charInfoEl.textContent = `Kênh BLE đang mở: ${charSummary.join(', ')}`;
+        }
+
+        if (!bleCharacteristic) {
+          throw new Error('Không tìm thấy kênh nhận dữ liệu (Notify) trên thiết bị.');
+        }
+
+        isConnectedBLE = true;
+        rxBuffer = new Uint8Array(0);
+        updateConnectionUI(true, bleDevice.name || 'Atorch T3');
+        showToast(`Đã kết nối thành công với ${bleDevice.name || 'Atorch T3'}!`, 'success');
+      } catch (err) {
+        if (err && err.name === 'NotFoundError') {
+          showToast('Đã hủy chọn thiết bị Bluetooth.', 'info');
+        } else {
+          showToast(`Lỗi kết nối BLE: ${err.message}`, 'error');
+        }
+        onBleDisconnected();
+      }
+    }
+
+    function onBleDisconnected() {
+      isConnectedBLE = false;
+      bleCharacteristic = null;
+      bleWriteCharacteristics = [];
+      rxBuffer = new Uint8Array(0);
+      const charInfoEl = document.getElementById('ble-char-info');
+      if (charInfoEl) charInfoEl.textContent = 'Kênh BLE: Chưa kết nối';
+      if (!isSimulating) {
+        updateConnectionUI(false);
+      }
+    }
+
+    /**
+     * Build 10-byte Atorch/E-test command packet: FF 55 11 [DEV_TYPE] [CMD] 00 00 00 [VAL] [CHECKSUM]
+     */
+    function buildAtorchPacket(devType, cmdCode, paramVal = 0x00) {
+      const pkt = new Uint8Array([0xff, 0x55, 0x11, devType, cmdCode, 0x00, 0x00, 0x00, paramVal & 0xff, 0x00]);
+      let sum = 0;
+      for (let i = 2; i <= 8; i++) sum += pkt[i];
+      pkt[9] = (sum & 0xff) ^ 0x44;
+      return pkt;
+    }
+
+    async function sendAtorchCommand(cmdType, paramVal = 0) {
+      const cmdMap = {
+        RESET_WH: 0x01,
+        RESET_MAH: 0x02,
+        RESET_TIME: 0x03,
+        RESET_ALL: 0x05,
+        KEY_MENU: 0x11,
+        KEY_PLUS: 0x12,
+        KEY_MINUS: 0x13,
+        KEY_ENTER: 0x14,
+        BRIGHTNESS: 0x21,
+        T3_BRIGHTNESS_STEP: 0x31,
+        T3_PAGE_PREV: 0x32,
+        T3_PAGE_NEXT: 0x33,
+        T3_EXTRA_ACTION: 0x34
+      };
+
+      const cmdCode = cmdMap[cmdType];
+      if (cmdCode === undefined) return;
+
+      const packet = buildAtorchPacket(0x03, cmdCode, paramVal);
+      const hexPreview = Array.from(packet).map(b => b.toString(16).padStart(2, '0').toUpperCase()).join(' ');
+
+      if (isSimulating) {
+        if (cmdType === 'RESET_ALL' || cmdType === 'RESET_MAH' || cmdType === 'RESET_WH') {
+          simState.mah = 0;
+          simState.wh = 0;
+        }
+        if (cmdType === 'RESET_ALL' || cmdType === 'RESET_TIME') {
+          simState.seconds = 0;
+        }
+        showToast(`[Mô phỏng] TX: ${hexPreview}`, 'info');
+        return;
+      }
+
+      if (!isConnectedBLE || bleWriteCharacteristics.length === 0) {
+        showToast('Vui lòng kết nối Atorch T3 (hoặc bật Mô phỏng) trước khi gửi lệnh!', 'warning');
+        return;
+      }
+
+      try {
+        await writeBlePacket(packet);
+        showToast(`TX (${cmdType}): ${hexPreview}`, 'success');
+      } catch (err) {
+        showToast(`Không gửi được lệnh tới T3: ${err.message}`, 'error');
+      }
+    }
+
+    async function resetAllT3Counters() {
+      if (isSimulating) {
+        simState.mah = 0;
+        simState.wh = 0;
+        simState.seconds = 0;
+        showToast('[Mô phỏng] Đã Reset toàn bộ mAh, Wh và Thời gian về 0!', 'success');
+        return;
+      }
+
+      if (!isConnectedBLE || bleWriteCharacteristics.length === 0) {
+        showToast('Vui lòng kết nối Atorch T3 trước khi gửi lệnh Reset!', 'warning');
+        return;
+      }
+
+      try {
+        // Gửi tuần tự chuỗi lệnh Reset tổng (0x05) kèm Reset từng kênh (0x01 Wh, 0x02 mAh, 0x03 Giờ) để đảm bảo mọi bản firmware T3 đều về 0 sạch sẽ
+        const codes = [0x05, 0x01, 0x02, 0x03];
+        for (const code of codes) {
+          const pkt = buildAtorchPacket(0x03, code, 0x00);
+          await writeBlePacket(pkt);
+          await new Promise(r => setTimeout(r, 60));
+        }
+        showToast('Đã gửi lệnh Reset toàn bộ mAh, Wh và Thời gian trên Atorch T3 về 0!', 'success');
+      } catch (err) {
+        showToast(`Lỗi khi Reset T3: ${err.message}`, 'error');
+      }
+    }
+
+    async function writeBlePacket(packet) {
+      let sentCount = 0;
+      let lastErr = null;
+      // Broadcast command to ALL writable characteristics (FFE2, FFE1, FFF2...) so T3 receives it regardless of BLE chip revision
+      for (const char of bleWriteCharacteristics) {
+        try {
+          if (char.properties && char.properties.writeWithoutResponse) {
+            await char.writeValueWithoutResponse(packet);
+          } else {
+            await char.writeValue(packet);
+          }
+          sentCount++;
+        } catch (e) {
+          lastErr = e;
+        }
+      }
+      if (sentCount === 0 && lastErr) throw lastErr;
+    }
+
+    async function stepTestOpcode(delta) {
+      probeOpcode = Math.max(0x01, Math.min(0xff, probeOpcode + delta));
+      const hexOp = '0x' + probeOpcode.toString(16).padStart(2, '0').toUpperCase();
+      const badge = document.getElementById('current-probe-opcode');
+      if (badge) badge.textContent = hexOp;
+
+      const cmdStr = `FF 55 11 03 ${probeOpcode.toString(16).padStart(2, '0').toUpperCase()} 00 00 00 00`;
+      sendRawPreset(cmdStr);
+    }
+
+    function sendRawPreset(hexStr) {
+      const input = document.getElementById('input-custom-hex');
+      if (input) input.value = hexStr;
+      sendCustomHexCommand();
+    }
+
+    async function setT3Brightness(val) {
+      const level = Math.max(0, Math.min(100, Number(val) || 0));
+      if (level > 0) {
+        lastT3Brightness = level;
+        isT3ScreenOn = true;
+        const btn = document.getElementById('btn-screen-power');
+        if (btn) btn.textContent = 'Tắt Màn Hình';
+      }
+      await sendAtorchCommand('BRIGHTNESS', level);
+    }
+
+    async function toggleT3ScreenPower() {
+      const btn = document.getElementById('btn-screen-power');
+      const slider = document.getElementById('slider-t3-brightness');
+      const label = document.getElementById('val-t3-brightness');
+
+      if (isT3ScreenOn) {
+        isT3ScreenOn = false;
+        if (btn) btn.textContent = 'Bật Màn Hình';
+        if (slider) slider.value = 0;
+        if (label) label.textContent = '0%';
+        await sendAtorchCommand('BRIGHTNESS', 0);
+      } else {
+        isT3ScreenOn = true;
+        const restoreVal = lastT3Brightness || 80;
+        if (btn) btn.textContent = 'Tắt Màn Hình';
+        if (slider) slider.value = restoreVal;
+        if (label) label.textContent = `${restoreVal}%`;
+        await sendAtorchCommand('BRIGHTNESS', restoreVal);
+      }
+    }
+
+    async function toggleT3Backlight32() {
+      if (isT3ScreenOn) {
+        isT3ScreenOn = false;
+        await sendAtorchCommand('T3_PAGE_PREV', 0x01);
+      } else {
+        isT3ScreenOn = true;
+        await sendAtorchCommand('T3_PAGE_PREV', 0x00);
+      }
+    }
+
+    async function sendCustomHexCommand() {
+      const input = document.getElementById('input-custom-hex');
+      const autoChecksum = document.getElementById('chk-auto-checksum').checked;
+      if (!input) return;
+
+      const tokens = input.value.trim().split(/[\s,:-]+/).filter(Boolean);
+      if (tokens.length === 0) {
+        showToast('Vui lòng nhập chuỗi byte Hex (VD: FF 55 11 03 11 00 00 00 00)', 'warning');
+        return;
+      }
+
+      const bytes = [];
+      for (const t of tokens) {
+        if (!/^[0-9a-fA-F]{1,2}$/.test(t)) {
+          showToast(`Byte Hex không hợp lệ: "${t}"`, 'error');
+          return;
+        }
+        bytes.push(parseInt(t, 16));
+      }
+
+      if (autoChecksum && bytes.length >= 9) {
+        let sum = 0;
+        for (let i = 2; i <= 8; i++) sum += bytes[i];
+        bytes[9] = (sum & 0xff) ^ 0x44;
+      }
+
+      const packet = new Uint8Array(bytes);
+      const hexStr = Array.from(packet).map(b => b.toString(16).padStart(2, '0').toUpperCase()).join(' ');
+
+      if (!isConnectedBLE || bleWriteCharacteristics.length === 0) {
+        showToast(`[Chưa kết nối BLE] Chuỗi gói tin đã tạo: ${hexStr}`, 'info');
+        return;
+      }
+
+      try {
+        await writeBlePacket(packet);
+        showToast(`Đã gửi TX Hex: ${hexStr}`, 'success');
+      } catch (err) {
+        showToast(`Lỗi gửi TX Hex: ${err.message}`, 'error');
+      }
+    }
+
+    /**
+     * Reassemble BLE chunks (often split into 20-byte MTU packets) into complete 36-byte Atorch frames
+     */
+    function handleBleNotification(event) {
+      const value = new Uint8Array(event.target.value.buffer);
+
+      // Live raw chunk preview in Hex Console
+      const hexDrawer = document.getElementById('hex-drawer');
+      if (hexDrawer && !hexDrawer.classList.contains('hidden')) {
+        const rawHex = Array.from(value).map(b => b.toString(16).padStart(2, '0').toUpperCase()).join(' ');
+        document.getElementById('hex-log-output').textContent = `[RX ${value.length}B - ${new Date().toLocaleTimeString()}] ${rawHex}`;
+      }
+
+      const combined = new Uint8Array(rxBuffer.length + value.length);
+      combined.set(rxBuffer);
+      combined.set(value, rxBuffer.length);
+      rxBuffer = combined;
+
+      // Scan buffer for Atorch frame header: 0xFF 0x55 0x01 (Report frame)
+      while (rxBuffer.length >= 36) {
+        const headerIdx = findAtorchHeader(rxBuffer);
+        if (headerIdx === -1) {
+          rxBuffer = rxBuffer.slice(rxBuffer.length - 2);
+          break;
+        }
+        if (headerIdx > 0) {
+          rxBuffer = rxBuffer.slice(headerIdx);
+        }
+        if (rxBuffer.length < 36) break;
+
+        const frame = rxBuffer.slice(0, 36);
+        rxBuffer = rxBuffer.slice(36);
+
+        if (frame[2] === 0x01) {
+          parseAtorchTelemetryFrame(frame);
+        }
+      }
+    }
+
+    function findAtorchHeader(buf) {
+      for (let i = 0; i <= buf.length - 3; i++) {
+        if (buf[i] === 0xff && buf[i + 1] === 0x55 && (buf[i + 2] === 0x01 || buf[i + 2] === 0x02)) {
+          return i;
+        }
+      }
+      return -1;
+    }
+
+    /**
+     * Decode 36-byte Atorch USB Meter Frame (Verified against user's Atorch T3 Hex Dump)
+     * Bytes 0..1:   FF 55 (Magic Header)
+     * Byte 2:       01 (Data Report)
+     * Byte 3:       03 (Device Type: USB Meter)
+     * Bytes 4..6:   Voltage (24-bit BE, / 100.0 -> V)
+     * Bytes 7..9:   Current (24-bit BE, / currentScaleDivider -> A)
+     * Bytes 10..12: Capacity (24-bit BE, mAh)
+     * Bytes 13..16: Energy (32-bit BE, / 100.0 -> Wh)
+     * Bytes 17..18: D- Voltage (16-bit BE, / 100.0 -> V)
+     * Bytes 19..20: D+ Voltage (16-bit BE, / 100.0 -> V)
+     * Bytes 21..22: Temperature (16-bit BE, °C)
+     * Bytes 23..26: Elapsed Time (24-bit/32-bit BE, seconds)
+     */
+    function parseAtorchTelemetryFrame(frame) {
+      totalPacketsReceived++;
+      packetsInLastSecond++;
+
+      const hexDrawer = document.getElementById('hex-drawer');
+      if (hexDrawer && !hexDrawer.classList.contains('hidden')) {
+        const hexStr = Array.from(frame).map(b => b.toString(16).padStart(2, '0').toUpperCase()).join(' ');
+        document.getElementById('hex-log-output').textContent = `[${new Date().toLocaleTimeString()}] ${hexStr}`;
+        document.getElementById('packet-count').textContent = totalPacketsReceived;
+      }
+
+      const readU24 = (offset) => (frame[offset] << 16) | (frame[offset + 1] << 8) | frame[offset + 2];
+      const readU16 = (offset) => (frame[offset] << 8) | frame[offset + 1];
+      const readU32 = (offset) => ((frame[offset] << 24) >>> 0) + (frame[offset + 1] << 16) + (frame[offset + 2] << 8) + frame[offset + 3];
+
+      const voltage = readU24(4) / 100.0;
+      const current = readU24(7) / currentScaleDivider;
+      const mah = readU24(10);
+      const wh = readU32(13) / 100.0;
+      const dMinus = readU16(17) / 100.0;
+      const dPlus = readU16(19) / 100.0;
+      const temp = readU16(21);
+      const elapsedSeconds = readU24(24);
+
+      const power = voltage * current;
+
+      ingestTelemetryPoint({
+        voltage,
+        current,
+        power,
+        mah,
+        wh,
+        dPlus,
+        dMinus,
+        temp,
+        elapsedSeconds
+      });
+    }
+
+    // =========================================================================
+    // 5. TELEMETRY SIMULATOR (FOR TESTING & PREVIEWING WITHOUT HARDWARE)
+    // =========================================================================
+    function toggleSimulator() {
+      const btn = document.getElementById('btn-sim-toggle');
+      const label = document.getElementById('btn-sim-label');
+
+      if (isSimulating) {
+        clearInterval(simInterval);
+        simInterval = null;
+        isSimulating = false;
+        btn.className = 'inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition';
+        label.textContent = 'Mô phỏng';
+        if (!isConnectedBLE) updateConnectionUI(false);
+        showToast('Đã dừng chế độ mô phỏng.', 'info');
+        return;
+      }
+
+      if (isConnectedBLE) {
+        showToast('Đang kết nối Bluetooth thật, không thể bật mô phỏng cùng lúc.', 'warning');
+        return;
+      }
+
+      isSimulating = true;
+      btn.className = 'inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/40 transition';
+      label.textContent = 'Dừng MP';
+      updateConnectionUI(true, 'T3 Mô phỏng');
+      showToast('Đang chạy dữ liệu mô phỏng sạc nhanh PD 20V/65W...', 'success');
+
+      simInterval = setInterval(() => {
+        simState.seconds += 1;
+        const rippleV = (Math.random() - 0.5) * 0.04;
+        const rippleA = (Math.random() - 0.5) * 0.06;
+        const voltage = 19.92 + rippleV;
+        const current = Math.max(0, 3.18 + rippleA);
+        const power = voltage * current;
+
+        simState.mah += (current * 1000) / 3600;
+        simState.wh += power / 3600;
+
+        totalPacketsReceived++;
+        packetsInLastSecond++;
+
+        ingestTelemetryPoint({
+          voltage,
+          current,
+          power,
+          mah: Math.round(simState.mah),
+          wh: Number(simState.wh.toFixed(2)),
+          dPlus: 0.62,
+          dMinus: 0.00,
+          temp: Math.min(46, 31 + Math.floor(simState.seconds / 25)),
+          elapsedSeconds: simState.seconds
+        });
+      }, 1000);
+    }
+
+    // =========================================================================
+    // 6. CORE TELEMETRY PROCESSING, PROTOCOL DETECTION & UI UPDATES
+    // =========================================================================
+    function detectChargingProtocol(v, a, dp, dm) {
+      if (a < 0.03) return 'Không tải / Chờ';
+      if (v >= 18.5) return 'USB-C PD 20V (PPS/PD3.0)';
+      if (v >= 14.0 && v < 18.5) return 'USB-C PD 15V';
+      if (v >= 11.0 && v < 14.0) return 'QC 3.0 / PD 12V';
+      if (v >= 8.2 && v < 11.0) {
+        if (Math.abs(dp - 0.6) < 0.25 && dm < 0.2) return 'QC 2.0 / AFC 9V';
+        return 'USB-C PD / Fast Charge 9V';
+      }
+      if (Math.abs(dp - 2.7) < 0.25 && Math.abs(dm - 2.0) < 0.25) return 'Apple 2.4A (5V)';
+      if (Math.abs(dp - 2.0) < 0.25 && Math.abs(dm - 2.7) < 0.25) return 'Apple 1.0A (5V)';
+      if (Math.abs(dp - 1.2) < 0.25 && Math.abs(dm - 1.2) < 0.25) return 'Samsung 2.0A (5V)';
+      if (Math.abs(dp - dm) < 0.15 && dp > 0.3) return 'DCP 1.5A (BC1.2)';
+      return 'Chuẩn USB 5V';
+    }
+
+    function formatDuration(totalSec) {
+      const hrs = Math.floor(totalSec / 3600);
+      const mins = Math.floor((totalSec % 3600) / 60);
+      const secs = Math.floor(totalSec % 60);
+      return [hrs, mins, secs].map(v => String(v).padStart(2, '0')).join(':');
+    }
+
+    function ingestTelemetryPoint(data) {
+      const { voltage, current, power, mah, wh, dPlus, dMinus, temp, elapsedSeconds } = data;
+
+      // Update main KPI cards
+      document.getElementById('val-voltage').textContent = voltage.toFixed(3);
+      document.getElementById('val-current').textContent = current.toFixed(3);
+      document.getElementById('val-power').textContent = power.toFixed(2);
+      document.getElementById('val-mah').textContent = mah.toLocaleString('en-US');
+      document.getElementById('val-wh').textContent = wh.toFixed(2);
+
+      const durStr = formatDuration(elapsedSeconds);
+      document.getElementById('val-timer').textContent = durStr;
+
+      // D+ / D- & Protocol
+      document.getElementById('val-dplus').textContent = `${dPlus.toFixed(2)}V`;
+      document.getElementById('val-dminus').textContent = `${dMinus.toFixed(2)}V`;
+      const protocol = detectChargingProtocol(voltage, current, dPlus, dMinus);
+      document.getElementById('val-protocol').textContent = protocol;
+
+      // Temperature & thermal status
+      document.getElementById('val-temp').textContent = temp;
+      const tempBadge = document.getElementById('temp-status-badge');
+      if (temp >= 55) {
+        tempBadge.textContent = 'Nhiệt cao!';
+        tempBadge.className = 'px-2.5 py-1 rounded-lg text-xs font-semibold bg-rose-500/20 text-rose-400 border border-rose-500/30';
+      } else if (temp >= 42) {
+        tempBadge.textContent = 'Hơi ấm';
+        tempBadge.className = 'px-2.5 py-1 rounded-lg text-xs font-semibold bg-amber-500/15 text-amber-300 border border-amber-500/30';
+      } else {
+        tempBadge.textContent = 'Bình thường';
+        tempBadge.className = 'px-2.5 py-1 rounded-lg text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20';
+      }
+
+      // Load resistance & estimated load %
+      const resistance = current > 0.02 ? (voltage / current) : 0;
+      const resEl = document.getElementById('stat-resistance');
+      if (resEl) resEl.textContent = `${resistance.toFixed(1)} Ω`;
+
+      const loadPct = Math.min(100, Math.round((power / 65) * 100));
+      const loadEl = document.getElementById('stat-load-level');
+      if (loadEl) loadEl.textContent = `${loadPct}%`;
+
+      // Update running statistics
+      sessionStats.sampleCount++;
+      if (voltage > 0 && voltage < sessionStats.vMin) sessionStats.vMin = voltage;
+      if (voltage > sessionStats.vMax) sessionStats.vMax = voltage;
+      sessionStats.vSum += voltage;
+
+      if (current > sessionStats.aMax) sessionStats.aMax = current;
+      sessionStats.aSum += current;
+
+      if (power > sessionStats.wMax) sessionStats.wMax = power;
+      sessionStats.wSum += power;
+
+      if (temp > sessionStats.tempMax) sessionStats.tempMax = temp;
+
+      sessionStats.lastProtocol = protocol;
+      sessionStats.lastDurationStr = durStr;
+
+      if (sessionBaseMah === null) sessionBaseMah = mah;
+      if (sessionBaseWh === null) sessionBaseWh = wh;
+      sessionStats.sessionMah = Math.max(0, mah - sessionBaseMah);
+      sessionStats.sessionWh = Math.max(0, wh - sessionBaseWh);
+
+      const n = sessionStats.sampleCount;
+      const vMinEl = document.getElementById('stat-v-min');
+      const vAvgEl = document.getElementById('stat-v-avg');
+      const vMaxEl = document.getElementById('stat-v-max');
+      if (vMinEl) vMinEl.textContent = `${(sessionStats.vMin === Infinity ? 0 : sessionStats.vMin).toFixed(2)}V`;
+      if (vAvgEl) vAvgEl.textContent = `${(sessionStats.vSum / n).toFixed(2)}V`;
+      if (vMaxEl) vMaxEl.textContent = `${sessionStats.vMax.toFixed(2)}V`;
+
+      const aAvgEl = document.getElementById('stat-a-avg');
+      const aMaxEl = document.getElementById('stat-a-max');
+      if (aAvgEl) aAvgEl.textContent = `${(sessionStats.aSum / n).toFixed(2)}A`;
+      if (aMaxEl) aMaxEl.textContent = `${sessionStats.aMax.toFixed(2)}A`;
+
+      const wAvgEl = document.getElementById('stat-w-avg');
+      const wMaxEl = document.getElementById('stat-w-max');
+      if (wAvgEl) wAvgEl.textContent = `${(sessionStats.wSum / n).toFixed(2)}W`;
+      if (wMaxEl) wMaxEl.textContent = `${sessionStats.wMax.toFixed(2)}W`;
+
+      const tempMaxEl = document.getElementById('stat-temp-max');
+      if (tempMaxEl) tempMaxEl.textContent = `${sessionStats.tempMax}°C`;
+
+      const sessMahEl = document.getElementById('stat-session-mah');
+      if (sessMahEl) sessMahEl.textContent = `Phiên ghi: +${sessionStats.sessionMah} mAh`;
+
+      const recWMaxEl = document.getElementById('rec-w-max');
+      const recMahEl = document.getElementById('rec-mah');
+      const recWhEl = document.getElementById('rec-wh');
+      if (recWMaxEl) recWMaxEl.textContent = `${sessionStats.wMax.toFixed(2)} W`;
+      if (recMahEl) recMahEl.textContent = `${sessionStats.sessionMah} mAh`;
+      if (recWhEl) recWhEl.textContent = `${sessionStats.sessionWh.toFixed(2)} Wh`;
+
+      const timeLabel = new Date().toLocaleTimeString('vi-VN', { hour12: false });
+
+      if (isRecording) {
+        sessionStats.samples.push({
+          timestamp: new Date().toISOString(),
+          timeLabel,
+          voltage: voltage.toFixed(3),
+          current: current.toFixed(3),
+          power: power.toFixed(2),
+          mah,
+          wh: wh.toFixed(2),
+          temp,
+          protocol
+        });
+        document.getElementById('session-sample-count').textContent = sessionStats.samples.length;
+
+        if (sessionStartTimestamp) {
+          const recSec = Math.floor((Date.now() - sessionStartTimestamp) / 1000);
+          document.getElementById('rec-timer-badge').textContent = formatDuration(recSec);
+        }
+
+        // Auto-stop if full charge detected (current < 0.05A for 10s)
+        const chkAuto = document.getElementById('chk-auto-stop');
+        if (chkAuto && chkAuto.checked && current < 0.05) {
+          autoStopLowCurrentSeconds++;
+          if (autoStopLowCurrentSeconds >= 10) {
+            toggleRecording();
+            showToast('Pin đã đầy (dòng < 0.05A trong 10s). Đã tự động dừng ghi phiên!', 'success');
+          }
+        } else {
+          autoStopLowCurrentSeconds = 0;
+        }
+      }
+
+      appendChartData(timeLabel, voltage, current, power, dPlus, dMinus);
+    }
+
+    // =========================================================================
+    // 7. REAL-TIME MULTI-AXIS CHART (CHARGERLAB POWER-Z OSCILLOSCOPE STYLE)
+    // =========================================================================
+    const powerZCrosshairPlugin = {
+      id: 'powerZCrosshair',
+      afterDatasetsDraw(chart) {
+        const { ctx, chartArea, scales } = chart;
+        if (!chartArea) return;
+
+        // 1. Draw dashed Peak Reference Line for VBUS & POWER (POWER-Z style)
+        const vData = chart.data.datasets[0]?.data || [];
+        if (vData.length > 1 && !chart.getDatasetMeta(0).hidden) {
+          let maxV = -Infinity;
+          for (const val of vData) if (val > maxV) maxV = val;
+          const yPos = scales.yV.getPixelForValue(maxV);
+          if (yPos >= chartArea.top && yPos <= chartArea.bottom) {
+            ctx.save();
+            ctx.beginPath();
+            ctx.setLineDash([4, 4]);
+            ctx.lineWidth = 1;
+            ctx.strokeStyle = 'rgba(244, 63, 94, 0.35)';
+            ctx.moveTo(chartArea.left, yPos);
+            ctx.lineTo(chartArea.right, yPos);
+            ctx.stroke();
+            ctx.fillStyle = 'rgba(244, 63, 94, 0.85)';
+            ctx.font = '600 10px "JetBrains Mono", monospace';
+            ctx.fillText(`PEAK ${maxV.toFixed(2)}V`, chartArea.left + 6, Math.max(chartArea.top + 11, yPos - 4));
+            ctx.restore();
+          }
+        }
+
+        // 2. Draw vertical & horizontal Oscilloscope Crosshair on hover
+        const active = chart.getActiveElements();
+        if (active && active.length > 0) {
+          const pt = active[0].element;
+          ctx.save();
+          ctx.beginPath();
+          ctx.setLineDash([3, 3]);
+          ctx.lineWidth = 1;
+          ctx.strokeStyle = 'rgba(148, 163, 184, 0.55)';
+          // Vertical cursor line
+          ctx.moveTo(pt.x, chartArea.top);
+          ctx.lineTo(pt.x, chartArea.bottom);
+          // Horizontal cursor line
+          ctx.moveTo(chartArea.left, pt.y);
+          ctx.lineTo(chartArea.right, pt.y);
+          ctx.stroke();
+          ctx.restore();
+        }
+      }
+    };
+
+    function initTelemetryChart() {
+      const ctx = document.getElementById('telemetryChart').getContext('2d');
+
+      chartInstance = new Chart(ctx, {
+        type: 'line',
+        plugins: [powerZCrosshairPlugin],
+        data: {
+          labels: [],
+          datasets: [
+            {
+              label: 'VBUS (V)',
+              data: [],
+              borderColor: '#f43f5e', // POWER-Z signature Crimson Red for Voltage
+              backgroundColor: 'rgba(244, 63, 94, 0.06)',
+              borderWidth: 1.8,
+              fill: false,
+              tension: 0.15,
+              pointRadius: 0,
+              pointHoverRadius: 4,
+              pointHoverBackgroundColor: '#f43f5e',
+              yAxisID: 'yV'
+            },
+            {
+              label: 'IBUS (A)',
+              data: [],
+              borderColor: '#38bdf8', // POWER-Z signature Electric Blue for Current
+              backgroundColor: 'rgba(56, 189, 248, 0.06)',
+              borderWidth: 1.8,
+              fill: false,
+              tension: 0.15,
+              pointRadius: 0,
+              pointHoverRadius: 4,
+              pointHoverBackgroundColor: '#38bdf8',
+              yAxisID: 'yA'
+            },
+            {
+              label: 'POWER (W)',
+              data: [],
+              borderColor: '#10b981', // POWER-Z signature Emerald Green for Power
+              backgroundColor: 'rgba(16, 185, 129, 0.06)',
+              borderWidth: 1.8,
+              fill: false,
+              tension: 0.15,
+              pointRadius: 0,
+              pointHoverRadius: 4,
+              pointHoverBackgroundColor: '#10b981',
+              yAxisID: 'yW'
+            },
+            {
+              label: 'D+ (V)',
+              data: [],
+              borderColor: '#fbbf24', // Amber Yellow for D+
+              borderWidth: 1.4,
+              borderDash: [3, 2],
+              fill: false,
+              hidden: true,
+              tension: 0.1,
+              pointRadius: 0,
+              yAxisID: 'yData'
+            },
+            {
+              label: 'D- (V)',
+              data: [],
+              borderColor: '#c084fc', // Violet for D-
+              borderWidth: 1.4,
+              borderDash: [3, 2],
+              fill: false,
+              hidden: true,
+              tension: 0.1,
+              pointRadius: 0,
+              yAxisID: 'yData'
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          animation: false,
+          layout: {
+            padding: { top: 6, right: 4, left: 2, bottom: 2 }
+          },
+          interaction: {
+            mode: 'index',
+            intersect: false
+          },
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: 'rgba(6, 9, 17, 0.96)',
+              titleColor: '#94a3b8',
+              bodyColor: '#f8fafc',
+              borderColor: '#1e293b',
+              borderWidth: 1,
+              padding: 10,
+              cornerRadius: 8,
+              titleFont: { family: 'JetBrains Mono', size: 11 },
+              bodyFont: { family: 'JetBrains Mono', size: 12, weight: '600' },
+              usePointStyle: true,
+              callbacks: {
+                label: (item) => {
+                  const units = [' V', ' A', ' W', ' V', ' V'];
+                  const decs = [3, 3, 2, 2, 2];
+                  return ` ${item.dataset.label}: ${Number(item.raw).toFixed(decs[item.datasetIndex])}${units[item.datasetIndex]}`;
+                }
+              }
+            },
+            zoom: {
+              pan: {
+                enabled: true,
+                mode: 'x'
+              },
+              zoom: {
+                wheel: {
+                  enabled: true
+                },
+                pinch: {
+                  enabled: true
+                },
+                drag: {
+                  enabled: true,
+                  modifierKey: 'shift',
+                  backgroundColor: 'rgba(56, 189, 248, 0.14)',
+                  borderColor: 'rgba(56, 189, 248, 0.7)',
+                  borderWidth: 1
+                },
+                mode: 'x'
+              }
+            }
+          },
+          scales: {
+            x: {
+              grid: {
+                color: 'rgba(51, 65, 85, 0.35)',
+                lineWidth: 0.8,
+                drawTicks: true,
+                tickColor: '#334155'
+              },
+              border: { color: '#334155' },
+              ticks: { color: '#64748b', maxTicksLimit: 10, padding: 4, font: { family: 'JetBrains Mono', size: 10 } }
+            },
+            yV: {
+              type: 'linear',
+              position: 'left',
+              grid: {
+                color: 'rgba(51, 65, 85, 0.35)',
+                lineWidth: 0.8,
+                drawTicks: false
+              },
+              border: { color: '#f43f5e' },
+              ticks: {
+                color: '#f43f5e',
+                padding: 5,
+                font: { family: 'JetBrains Mono', size: 10, weight: '600' },
+                callback: (val) => Number(val).toFixed(2) + 'V'
+              }
+            },
+            yA: {
+              type: 'linear',
+              position: 'right',
+              grid: { drawOnChartArea: false, drawTicks: false },
+              border: { color: '#38bdf8' },
+              ticks: {
+                color: '#38bdf8',
+                padding: 5,
+                font: { family: 'JetBrains Mono', size: 10, weight: '600' },
+                callback: (val) => Number(val).toFixed(2) + 'A'
+              }
+            },
+            yW: {
+              type: 'linear',
+              position: 'right',
+              grid: { drawOnChartArea: false, drawTicks: false },
+              border: { color: '#10b981' },
+              ticks: {
+                color: '#10b981',
+                padding: 5,
+                font: { family: 'JetBrains Mono', size: 10, weight: '600' },
+                callback: (val) => Number(val).toFixed(1) + 'W'
+              }
+            },
+            yData: {
+              type: 'linear',
+              position: 'left',
+              display: false,
+              min: 0,
+              max: 3.6
+            }
+          }
+        }
+      });
+    }
+
+    function updateDynamicAxisBounds() {
+      if (!chartInstance) return;
+      const scales = chartInstance.options.scales;
+      if (!isChartAutoScale) {
+        // Start all 3 axes cleanly from 0 while stacking tracks from top to bottom:
+        // Top track (~82% height): POWER (W)
+        // Middle track (~55% height): VBUS (V)
+        // Bottom track (~28% height): IBUS (A)
+        const getMaxVal = (arr, fallbackMax) => {
+          if (!arr || arr.length === 0) return fallbackMax;
+          let hi = 0;
+          for (const val of arr) if (val > hi) hi = val;
+          return hi > 0 ? hi : fallbackMax;
+        };
+
+        const niceCeil = (raw, steps) => {
+          for (const s of steps) {
+            if (raw <= s) return s;
+          }
+          return Math.ceil(raw / 10) * 10;
+        };
+
+        const maxV = getMaxVal(chartInstance.data.datasets[0].data, 5);
+        const maxA = getMaxVal(chartInstance.data.datasets[1].data, 1);
+        const maxW = getMaxVal(chartInstance.data.datasets[2].data, 5);
+
+        scales.yW.min = 0;
+        scales.yW.max = niceCeil(maxW * 1.22, [10, 15, 20, 25, 30, 40, 50, 65, 80, 100, 140, 200, 250]);
+
+        scales.yV.min = 0;
+        scales.yV.max = niceCeil(maxV * 1.82, [9, 10, 12, 15, 18, 20, 24, 30, 36, 40, 50]);
+
+        scales.yA.min = 0;
+        scales.yA.max = niceCeil(maxA * 3.4, [3, 4, 5, 6, 8, 10, 12, 15, 18, 20]);
+        return;
+      }
+
+      const calcBounds = (arr, minSpan, offsetFactor = 0) => {
+        if (!arr || arr.length === 0) return { min: undefined, max: undefined };
+        let lo = Infinity;
+        let hi = -Infinity;
+        for (const val of arr) {
+          if (val < lo) lo = val;
+          if (val > hi) hi = val;
+        }
+        const span = Math.max(minSpan, (hi - lo) * 1.45);
+        const center = (lo + hi) / 2 + span * offsetFactor;
+        return {
+          min: Math.max(0, Number((center - span * 0.55).toFixed(3))),
+          max: Number((center + span * 0.55).toFixed(3))
+        };
+      };
+
+      // Stagger vertical bands from top to bottom: POWER (top), VBUS (mid), IBUS (bottom)
+      const bW = calcBounds(chartInstance.data.datasets[2].data, 1.2, -0.22);
+      const bV = calcBounds(chartInstance.data.datasets[0].data, 0.25, 0.0);
+      const bA = calcBounds(chartInstance.data.datasets[1].data, 0.15, 0.22);
+
+      scales.yW.min = bW.min;
+      scales.yW.max = bW.max;
+      scales.yV.min = bV.min;
+      scales.yV.max = bV.max;
+      scales.yA.min = bA.min;
+      scales.yA.max = bA.max;
+    }
+
+    function toggleChartAutoScale() {
+      isChartAutoScale = !isChartAutoScale;
+      const btn = document.getElementById('btn-chart-autoscale');
+      if (btn) {
+        if (isChartAutoScale) {
+          btn.textContent = 'Gốc trục: Zoom sát';
+          btn.className = 'px-2.5 py-1 rounded-lg text-xs font-semibold bg-cyan-500/15 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500/25 transition';
+        } else {
+          btn.textContent = 'Gốc trục: 0';
+          btn.className = 'px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition';
+        }
+      }
+      updateDynamicAxisBounds();
+      if (chartInstance) chartInstance.update('none');
+    }
+
+    function appendChartData(label, v, a, w, dp = 0, dm = 0) {
+      if (!chartInstance) return;
+
+      // Update inline POWER-Z HUD strip above chart
+      const hudV = document.getElementById('hud-chart-v');
+      const hudA = document.getElementById('hud-chart-a');
+      const hudW = document.getElementById('hud-chart-w');
+      const hudDp = document.getElementById('hud-chart-dp');
+      const hudDm = document.getElementById('hud-chart-dm');
+      if (hudV) hudV.textContent = `${v.toFixed(3)}V`;
+      if (hudA) hudA.textContent = `${a.toFixed(3)}A`;
+      if (hudW) hudW.textContent = `${w.toFixed(2)}W`;
+      if (hudDp) hudDp.textContent = `${dp.toFixed(2)}V`;
+      if (hudDm) hudDm.textContent = `${dm.toFixed(2)}V`;
+
+      chartInstance.data.labels.push(label);
+      chartInstance.data.datasets[0].data.push(v);
+      chartInstance.data.datasets[1].data.push(a);
+      chartInstance.data.datasets[2].data.push(w);
+      chartInstance.data.datasets[3].data.push(dp);
+      chartInstance.data.datasets[4].data.push(dm);
+
+      if (chartWindowSeconds > 0 && chartInstance.data.labels.length > chartWindowSeconds) {
+        chartInstance.data.labels.shift();
+        chartInstance.data.datasets.forEach(ds => ds.data.shift());
+      }
+      updateDynamicAxisBounds();
+      chartInstance.update('none');
+    }
+
+    function setChartWindow(seconds) {
+      chartWindowSeconds = seconds;
+      document.querySelectorAll('.win-btn').forEach(btn => {
+        btn.className = 'win-btn px-2.5 py-1 rounded-lg font-medium text-slate-400 hover:text-white';
+      });
+      const activeBtn = document.getElementById(`win-${seconds}`);
+      if (activeBtn) {
+        activeBtn.className = 'win-btn px-2.5 py-1 rounded-lg font-medium bg-slate-800 text-white';
+      }
+    }
+
+    function zoomChart(factor) {
+      if (chartInstance && typeof chartInstance.zoom === 'function') {
+        chartInstance.zoom(factor);
+      }
+    }
+
+    function resetChartZoom() {
+      if (chartInstance && typeof chartInstance.resetZoom === 'function') {
+        chartInstance.resetZoom();
+        showToast('Đã đặt lại tỷ lệ biểu đồ về mặc định.', 'info');
+      }
+    }
+
+    function clearLiveChart() {
+      if (!chartInstance) return;
+      chartInstance.data.labels = [];
+      chartInstance.data.datasets.forEach(ds => (ds.data = []));
+      if (typeof chartInstance.resetZoom === 'function') chartInstance.resetZoom();
+      chartInstance.update();
+    }
+
+    function toggleDataset(index) {
+      if (!chartInstance) return;
+      const meta = chartInstance.getDatasetMeta(index);
+      meta.hidden = !meta.hidden;
+      chartInstance.update();
+    }
+
+    // =========================================================================
+    // 8. SESSION RECORDING & DEVICE QC BENCHMARK STORAGE
+    // =========================================================================
+    function toggleRecording() {
+      const btn = document.getElementById('btn-start-record');
+      const label = document.getElementById('btn-record-label');
+      const livePill = document.getElementById('rec-live-pill');
+
+      if (!isRecording) {
+        isRecording = true;
+        autoStopLowCurrentSeconds = 0;
+        sessionStartTimestamp = Date.now();
+        btn.className = 'flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-amber-500 hover:bg-amber-400 text-slate-950 transition shadow-lg';
+        label.textContent = 'Tạm dừng ghi';
+        livePill.classList.remove('hidden');
+        showToast('Bắt đầu ghi dữ liệu phiên kiểm tra thiết bị...', 'success');
+      } else {
+        isRecording = false;
+        btn.className = 'flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-rose-600 hover:bg-rose-500 text-white transition shadow-lg shadow-rose-950/40';
+        label.textContent = 'Tiếp tục ghi phiên';
+        livePill.classList.add('hidden');
+        showToast('Đã tạm dừng ghi phiên.', 'info');
+      }
+    }
+
+    function resetCurrentSessionStats() {
+      sessionStats = {
+        sampleCount: 0,
+        vMin: Infinity,
+        vMax: 0,
+        vSum: 0,
+        aMax: 0,
+        aSum: 0,
+        wMax: 0,
+        wSum: 0,
+        tempMax: 0,
+        lastProtocol: 'Chờ tải...',
+        lastDurationStr: '00:00:00',
+        sessionMah: 0,
+        sessionWh: 0,
+        samples: []
+      };
+      sessionBaseMah = null;
+      sessionBaseWh = null;
+      sessionStartTimestamp = isRecording ? Date.now() : null;
+      autoStopLowCurrentSeconds = 0;
+
+      document.getElementById('session-sample-count').textContent = '0';
+      document.getElementById('rec-timer-badge').textContent = '00:00:00';
+      document.getElementById('rec-w-max').textContent = '0.00 W';
+      document.getElementById('rec-mah').textContent = '0 mAh';
+      document.getElementById('rec-wh').textContent = '0.00 Wh';
+      document.getElementById('stat-session-mah').textContent = 'Phiên ghi: +0 mAh';
+      clearLiveChart();
+      showToast('Đã làm mới toàn bộ chỉ số phiên đo hiện tại.', 'info');
+    }
+
+    function getSavedBenchmarks() {
+      try {
+        return JSON.parse(localStorage.getItem(STORAGE_KEY_BENCHMARKS)) || [];
+      } catch {
+        return [];
+      }
+    }
+
+    function saveDeviceTestResult() {
+      const nameInput = document.getElementById('input-device-name');
+      const deviceName = nameInput.value.trim();
+      if (!deviceName) {
+        nameInput.focus();
+        showToast('Vui lòng nhập Tên thiết bị / Mã sản phẩm trước khi lưu!', 'warning');
+        return;
+      }
+
+      if (sessionStats.sampleCount === 0) {
+        showToast('Chưa có dữ liệu đo nào! Hãy kết nối T3 hoặc bật Mô phỏng.', 'warning');
+        return;
+      }
+
+      const n = sessionStats.sampleCount;
+      const record = {
+        id: Date.now(),
+        testedAt: new Date().toLocaleString('vi-VN'),
+        deviceName,
+        category: document.getElementById('input-device-category').value,
+        qcStatus: document.getElementById('input-qc-status').value,
+        notes: document.getElementById('input-device-notes').value.trim() || 'Không có ghi chú',
+        duration: document.getElementById('rec-timer-badge').textContent !== '00:00:00'
+          ? document.getElementById('rec-timer-badge').textContent
+          : sessionStats.lastDurationStr,
+        vAvg: (sessionStats.vSum / n).toFixed(2),
+        vMax: sessionStats.vMax.toFixed(2),
+        aMax: sessionStats.aMax.toFixed(2),
+        wAvg: (sessionStats.wSum / n).toFixed(2),
+        wMax: sessionStats.wMax.toFixed(2),
+        mah: sessionStats.sessionMah,
+        wh: sessionStats.sessionWh.toFixed(2),
+        tempMax: sessionStats.tempMax,
+        protocol: sessionStats.lastProtocol
+      };
+
+      const list = getSavedBenchmarks();
+      list.unshift(record);
+      localStorage.setItem(STORAGE_KEY_BENCHMARKS, JSON.stringify(list));
+
+      renderBenchmarkTable();
+      showToast(`Đã lưu kết quả kiểm tra cho "${deviceName}"!`, 'success');
+    }
+
+    function renderBenchmarkTable() {
+      const tbody = document.getElementById('benchmark-table-body');
+      const list = getSavedBenchmarks();
+      document.getElementById('saved-count-badge').textContent = list.length;
+
+      if (list.length === 0) {
+        tbody.innerHTML = `
+          <tr>
+            <td colspan="10" class="py-10 px-4 text-center text-slate-500">
+              Chưa có thiết bị nào được lưu. Nhập tên thiết bị ở khung bên trên và nhấn <strong class="text-slate-300">"Lưu kết quả thiết bị vào báo cáo"</strong>.
+            </td>
+          </tr>
+        `;
+        return;
+      }
+
+      tbody.innerHTML = list.map(item => {
+        let statusClass = 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30';
+        if (item.qcStatus.includes('KHÔNG ĐẠT')) {
+          statusClass = 'bg-rose-500/15 text-rose-300 border-rose-500/30';
+        } else if (item.qcStatus.includes('THEO DÕI')) {
+          statusClass = 'bg-amber-500/15 text-amber-300 border-amber-500/30';
+        }
+
+        return `
+          <tr class="hover:bg-slate-800/40 transition">
+            <td class="py-3 px-4">
+              <div class="font-semibold text-white">${escapeHtml(item.deviceName)}</div>
+              <div class="text-[11px] text-slate-400">${escapeHtml(item.testedAt)}</div>
+            </td>
+            <td class="py-3 px-3 text-slate-300">${escapeHtml(item.category)}</td>
+            <td class="py-3 px-3 mono-num text-slate-300">${escapeHtml(item.duration)}</td>
+            <td class="py-3 px-3 mono-num text-amber-300">${item.vAvg}V / ${item.vMax}V</td>
+            <td class="py-3 px-3 mono-num text-cyan-300">${item.aMax}A</td>
+            <td class="py-3 px-3 mono-num font-bold text-emerald-400">${item.wMax}W</td>
+            <td class="py-3 px-3 mono-num text-purple-300">${item.mah} mAh (${item.wh} Wh)</td>
+            <td class="py-3 px-3 text-xs text-indigo-300">${escapeHtml(item.protocol)}</td>
+            <td class="py-3 px-3">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold border ${statusClass}">${escapeHtml(item.qcStatus)}</span>
+            </td>
+            <td class="py-3 px-4 text-right whitespace-nowrap space-x-1.5">
+              <button onclick="openPrintModal(${item.id})" class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-800 hover:bg-cyan-600 text-slate-200 hover:text-white transition">
+                Phiếu QC
+              </button>
+              <button onclick="deleteBenchmarkItem(${item.id})" class="px-2 py-1 rounded-lg text-xs font-medium bg-slate-800/70 hover:bg-rose-600 text-slate-400 hover:text-white transition">
+                Xóa
+              </button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function deleteBenchmarkItem(id) {
+      const list = getSavedBenchmarks().filter(item => item.id !== id);
+      localStorage.setItem(STORAGE_KEY_BENCHMARKS, JSON.stringify(list));
+      renderBenchmarkTable();
+      showToast('Đã xóa bản ghi thiết bị.', 'info');
+    }
+
+    function clearAllSavedBenchmarks() {
+      const list = getSavedBenchmarks();
+      if (list.length === 0) return;
+      localStorage.removeItem(STORAGE_KEY_BENCHMARKS);
+      renderBenchmarkTable();
+      showToast('Đã xóa toàn bộ lịch sử kiểm tra thiết bị.', 'warning');
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    // =========================================================================
+    // 9. CSV / EXCEL EXPORT & PRINTABLE QC REPORT MODAL
+    // =========================================================================
+    function downloadFile(content, filename, mimeType) {
+      const blob = new Blob(['\uFEFF' + content], { type: mimeType });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    function exportAllBenchmarksCSV() {
+      const list = getSavedBenchmarks();
+      if (list.length === 0) {
+        showToast('Chưa có thiết bị nào trong danh sách để xuất báo cáo!', 'warning');
+        return;
+      }
+
+      const headers = [
+        'Thoi gian test',
+        'Ten thiet bi / SKU',
+        'Phan loai',
+        'Thoi luong do',
+        'Dien ap TB (V)',
+        'Dien ap Dinh (V)',
+        'Dong dien Dinh (A)',
+        'Cong suat TB (W)',
+        'Cong suat Dinh (W)',
+        'Dung luong (mAh)',
+        'Nang luong (Wh)',
+        'Nhiet do Max (C)',
+        'Chuan sac nhan dien',
+        'Ket luan QC',
+        'Ghi chu'
+      ];
+
+      const rows = list.map(item => [
+        `"${item.testedAt}"`,
+        `"${item.deviceName.replace(/"/g, '""')}"`,
+        `"${item.category}"`,
+        `"${item.duration}"`,
+        item.vAvg,
+        item.vMax,
+        item.aMax,
+        item.wAvg,
+        item.wMax,
+        item.mah,
+        item.wh,
+        item.tempMax,
+        `"${item.protocol}"`,
+        `"${item.qcStatus}"`,
+        `"${item.notes.replace(/"/g, '""')}"`
+      ].join(','));
+
+      const csv = [headers.join(','), ...rows].join('\n');
+      const dateTag = new Date().toISOString().slice(0, 10);
+      downloadFile(csv, `Bao_Cao_Test_QC_Atorch_T3_${dateTag}.csv`, 'text/csv;charset=utf-8;');
+      showToast('Đã xuất file báo cáo Excel/CSV thành công!', 'success');
+    }
+
+    function exportCurrentSessionCSV() {
+      if (sessionStats.samples.length === 0) {
+        showToast('Chưa có mẫu dữ liệu nào được ghi trong phiên! Hãy bấm "Bắt đầu ghi phiên" trước.', 'warning');
+        return;
+      }
+
+      const headers = ['Timestamp', 'Thoi_gian', 'Dien_ap_V', 'Dong_dien_A', 'Cong_suat_W', 'Dung_luong_mAh', 'Nang_luong_Wh', 'Nhiet_do_C', 'Chuan_sac'];
+      const rows = sessionStats.samples.map(s => [
+        s.timestamp,
+        s.timeLabel,
+        s.voltage,
+        s.current,
+        s.power,
+        s.mah,
+        s.wh,
+        s.temp,
+        `"${s.protocol}"`
+      ].join(','));
+
+      const devSlug = (document.getElementById('input-device-name').value.trim() || 'Thiet_Bi_T3').replace(/[^a-zA-Z0-9_-]/g, '_');
+      const csv = [headers.join(','), ...rows].join('\n');
+      downloadFile(csv, `Log_Chi_Tiet_${devSlug}_${Date.now()}.csv`, 'text/csv;charset=utf-8;');
+      showToast(`Đã xuất ${sessionStats.samples.length} dòng log chi tiết từng giây!`, 'success');
+    }
+
+    function openPrintModal(id) {
+      const item = getSavedBenchmarks().find(x => x.id === id);
+      if (!item) return;
+
+      document.getElementById('modal-dev-name').textContent = item.deviceName;
+      document.getElementById('modal-dev-meta').textContent = `Thời gian test: ${item.testedAt} | Phân loại: ${item.category}`;
+
+      const stamp = document.getElementById('modal-qc-stamp');
+      stamp.textContent = item.qcStatus;
+      if (item.qcStatus.includes('KHÔNG ĐẠT')) {
+        stamp.className = 'px-3.5 py-1.5 rounded-lg border-2 border-rose-600 text-rose-700 bg-rose-50 font-bold text-sm uppercase';
+      } else {
+        stamp.className = 'px-3.5 py-1.5 rounded-lg border-2 border-emerald-600 text-emerald-700 bg-emerald-50 font-bold text-sm uppercase';
+      }
+
+      document.getElementById('modal-v').textContent = `${item.vAvg}V / ${item.vMax}V`;
+      document.getElementById('modal-a').textContent = `${item.aMax} A`;
+      document.getElementById('modal-w').textContent = `${item.wMax}W / ${item.wAvg}W`;
+      document.getElementById('modal-cap').textContent = `${item.mah} mAh (${item.wh} Wh)`;
+      document.getElementById('modal-dur').textContent = item.duration;
+      document.getElementById('modal-proto').textContent = item.protocol;
+      document.getElementById('modal-temp').textContent = `${item.tempMax} °C`;
+      document.getElementById('modal-notes').textContent = item.notes;
+
+      document.getElementById('print-modal').classList.remove('hidden');
+    }
+
+    function closePrintModal() {
+      document.getElementById('print-modal').classList.add('hidden');
+    }
+
+    // =========================================================================
+    // 10. INITIALIZATION & PERIODIC TIMERS
+    // =========================================================================
+    window.addEventListener('DOMContentLoaded', () => {
+      initTelemetryChart();
+      renderBenchmarkTable();
+
+      // Sync saved current divider dropdown
+      const scaleSelect = document.getElementById('select-current-scale');
+      if (scaleSelect) {
+        scaleSelect.value = String(currentScaleDivider);
+      }
+
+      // Auto-stop checkbox UI state
+      const chkAuto = document.getElementById('chk-auto-stop');
+      const autoBadge = document.getElementById('auto-stop-state');
+      chkAuto.addEventListener('change', () => {
+        if (chkAuto.checked) {
+          autoBadge.textContent = 'BẬT';
+          autoBadge.className = 'px-2.5 py-1 rounded-lg text-[11px] font-mono font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/40';
+        } else {
+          autoBadge.textContent = 'TẮT';
+          autoBadge.className = 'px-2.5 py-1 rounded-lg text-[11px] font-mono bg-slate-800 text-slate-400 border border-slate-700';
+        }
+      });
+
+      // Packet rate ticker (1s)
+      setInterval(() => {
+        const rateEl = document.getElementById('packet-rate');
+        if (rateEl) rateEl.textContent = `${packetsInLastSecond} pkt/s`;
+        packetsInLastSecond = 0;
+      }, 1000);
+    });
+  </script>
+
+</body></html>
